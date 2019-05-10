@@ -1,0 +1,48 @@
+.navbar
+  background: trasparent
+  padding: 1.5rem $gutterWidth
+
+.nav-flex
+  display: flex
+  align-items: center
+
+.nav-link
+  text-decoration: none
+  color: $secondaryColor
+  padding: 10px 15px
+  margin: 0 15px
+  border-radius: 25px
+  letter-spacing: 1.3px
+  border: 1px solid $secondaryColor
+  transition: all 500ms ease-in-out
+  font-size: 1.25rem
+  &:hover
+    background: $secondaryColor
+    color: $primaryColor
+
+
+.nav-mobile
+  width: 100%
+  background: $tertiaryColor
+  height: 100vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  z-index: 999
+
+  .nav-link
+    text-decoration: none
+    color: $primaryColor
+    width: 100%
+    text-align: center
+    padding: 1rem 0
+    font-weight: 700
+    letter-spacing: 1.3px
+    font-size: 1.25rem
+    border-bottom: 1px solid $primaryColor
+    transition: all 500ms ease-in-out
+    &:hover
+      background: $primaryColor
+      color: $tertiaryColor
+    &:first-of-type
+      margin-top: 10vh

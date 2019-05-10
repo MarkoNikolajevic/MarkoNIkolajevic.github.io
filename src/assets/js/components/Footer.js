@@ -1,20 +1,23 @@
 import React from 'react'
-import profilePicture from '../../img/profile-picture.jpeg'
+import FooterLinks from './FooterLinks'
 
-function AboutMe() {
+function Footer() {
   return (
-    <section id='about'>
-      <img src={profilePicture} alt='Marko Nikolajević' className='profile-picture' />
-      <p className='personal-desc'>
-        Mi sono avvicinato alla programmazione attraverso la Specializzazione in
-        'Data Science' offerta dalla Johns Hopkins University sulla piattaforma di
-        e-learning, Coursera. Ho imparato a programmare in R e vari aspetti
-        nell'analisi di dati. Inoltre ho seguito corsi di programmazione web, sia
-        su Coursera sia su altre piattaforme come freeCodeCamp, Udacity ed edX,
-        migliorando la mia conoscenza e abilità.
-      </p>
-    </section>
+    <footer className='footer'>
+      <div className='footer-links-container'>
+        <FooterLinks
+          footerLink={{url: 'https://twitter.com/markez1317', icon: 'fab fa-twitter'}}
+        />
+        <FooterLinks
+          footerLink={{url: 'https://github.com/MarkoNikolajevic', icon: 'fab fa-github'}}
+        />
+        <FooterLinks
+          footerLink={{url: 'https://www.linkedin.com/in/markonikolajevic/', icon: 'fab fa-linkedin-in'}}
+        />
+      </div>
+      <p className='copyright'>&copy; 2019 Marko Nikolajević</p>
+    </footer>
   )
 }
 
-export default AboutMe
+export default Footer

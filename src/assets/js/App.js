@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/App.css'
+import '../style/App.sass'
 import Header from './components/Header'
 import AboutMe from './components/AboutMe'
 import Portfolio from './components/Portfolio'

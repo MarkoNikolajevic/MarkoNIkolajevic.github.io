@@ -7,9 +7,6 @@
   align-items: center
   justify-content: flex-end
 
-  .footer-logo
-    width: 50px
-
   .footer-links-container
     width: 100%
     display: flex
@@ -27,6 +24,23 @@
         font-size: 2rem
         padding: 0 10px
 
+      .fa-github
+        +transition
+        &:hover
+          color: $github
+          transform: scale(1.2)
+
+      .fa-twitter
+        +transition
+        &:hover
+          color: $twitter
+          transform: scale(1.2)
+
+      .fa-linkedin-in
+        +transition
+        &:hover
+          color: $linkedin
+          transform: scale(1.2)
 
 
   .copyright

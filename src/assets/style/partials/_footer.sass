@@ -7,40 +7,39 @@
   align-items: center
   justify-content: flex-end
 
-  .footer-links-container
-    width: 100%
-    display: flex
-    justify-content: center
-    align-self: center
+.footer-links-container
+  width: 100%
+  display: flex
+  justify-content: center
+  align-self: center
 
-    .footer-links
-      text-align: center
-      padding-top: 2rem
+.footer-links
+  text-align: center
+  padding-top: 2rem
 
-      .footer-link
-        text-decoration: none
-        color: $primaryColor
-        opacity: 0.5
-        font-size: 2rem
-        padding: 0 10px
+.footer-link
+  text-decoration: none
+  color: lighten($primaryColor, 50)
+  font-size: 2rem
+  padding: 0 10px
 
-      .fa-github
-        +transition
-        &:hover
-          color: $github
-          transform: scale(1.2)
+.fa-github
+  +transition
+  &:hover
+    color: $github
+    transform: scale(1.2)
 
-      .fa-twitter
-        +transition
-        &:hover
-          color: $twitter
-          transform: scale(1.2)
+.fa-twitter
+  +transition
+  &:hover
+    color: $twitter
+    transform: scale(1.2)
 
-      .fa-linkedin-in
-        +transition
-        &:hover
-          color: $linkedin
-          transform: scale(1.2)
+.fa-linkedin-in
+  +transition
+  &:hover
+    color: $linkedin
+    transform: scale(1.2)
 
 
   .copyright

@@ -2,11 +2,20 @@
   background: $tertiaryColor
   border-radius: 5px
   box-shadow: 0 5px 10px 0 rgba(33, 33, 33, 0.7)
+  +transition
+  &:hover
+    box-shadow: 0 7px 13px 0 rgba(33, 33, 33, 0.7)
+    transform: scale(1.025)
+  &:hover .fa-arrow-right
+    animation: arrow-animation 1.5s infinite
 
   .project-image
     width: 100%
     border-top-left-radius: 5px
     border-top-right-radius: 5px
+
+    img
+      width: 100%
 
   .project-text
     padding: 0 1.25rem 1.25rem 1.25rem
@@ -30,6 +39,17 @@
       color: $primaryColor
       display: flex
       align-items: center
+      +transition
 
       .fa-arrow-right
         padding-left: 10px
+
+// Arrow animation
+
+@keyframes arrow-animation
+  0%
+    transform: none
+  50%
+    transform: translateX(20px)
+  100%
+    transform: none

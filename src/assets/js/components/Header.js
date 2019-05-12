@@ -1,10 +1,12 @@
 import React from 'react'
 import Navbar from './Navbar'
+import MobileNav from './MobileNav'
 
 function Header() {
   return (
     <header className='main-header'>
       <Navbar />
+      <MobileNav />
       <div className='header-text'>
         <h1 className='main-title'>Marko<br />Nikolajević</h1>
         <p className='intro'>

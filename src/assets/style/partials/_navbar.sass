@@ -6,29 +6,31 @@
   display: flex
   align-items: center
 
-.nav-link
-  text-decoration: none
-  color: $secondaryColor
-  padding: 10px 15px
-  margin: 0 15px
-  border-radius: 25px
-  letter-spacing: 1.3px
-  border: 1px solid $secondaryColor
-  transition: all 500ms ease-in-out
-  font-size: 1.25rem
-  &:hover
-    background: $secondaryColor
-    color: $primaryColor
+  .nav-link
+    text-decoration: none
+    color: $secondaryColor
+    padding: 10px 15px
+    margin: 0 15px
+    border-radius: 25px
+    letter-spacing: 1.3px
+    border: 1px solid $secondaryColor
+    +transition
+    font-size: 1.25rem
+    &:hover
+      background: $secondaryColor
+      color: $primaryColor
 
 
 .nav-mobile
   width: 100%
   background: $tertiaryColor
   height: 100vh
-  display: flex
+  display: none
+  transform: translateX(-200%)
   flex-direction: column
   align-items: center
   z-index: 999
+  +transition
 
   .nav-link
     text-decoration: none
@@ -40,9 +42,17 @@
     letter-spacing: 1.3px
     font-size: 1.25rem
     border-bottom: 1px solid $primaryColor
-    transition: all 500ms ease-in-out
+    +transition
     &:hover
       background: $primaryColor
       color: $tertiaryColor
     &:first-of-type
       margin-top: 10vh
+
+  .wrapper
+    display: flex
+    margin-top: 5rem
+
+.show-menu-mobile
+  transform: translateX(0)
+  display: flex !important

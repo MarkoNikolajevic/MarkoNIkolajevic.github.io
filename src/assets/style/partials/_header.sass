@@ -9,6 +9,7 @@
     flex-direction: column
     height: 100%
     padding: 1.5rem $gutterWidth
+    margin: 0 auto
 
     .main-title
       font-size: 2.3rem
@@ -17,7 +18,45 @@
       line-height: 3rem
       margin-top: 10vh
 
-      .intro
-        font-size: 1.2rem
-        line-height: 1.7rem
-        letter-spacing: 1.5px
+    .intro
+      font-size: 1.2rem
+      line-height: 1.7rem
+      letter-spacing: 1.5px
+
+@media screen and (min-width: 30rem)
+  .header-text
+    width: 80% !important
+
+    .main-title
+      font-size: 2.7rem !important
+      line-height: 3.2rem !important
+
+    .intro
+      font-size: 1.3rem !important
+      line-height: 1.8rem !important
+
+@media screen and (min-width: 48rem)
+  .header-text
+    width: 70% !important
+
+    .main-title
+      font-size: 3.2rem !important
+      line-height: 3.7rem !important
+
+    .intro
+      font-size: 1.5rem !important
+      line-height: 2rem !important
+
+@media screen and (min-width: 60rem)
+  .main-title
+    font-size: 4.3rem !important
+    line-height: 4.8rem !important
+
+  .intro
+    font-size: 2.5rem !important
+    line-height: 3rem !important
+
+@media screen and (min-width: 63rem)
+  .intro
+    font-size: 3rem !important
+    line-height: 3.5rem !important

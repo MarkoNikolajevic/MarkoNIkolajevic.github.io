@@ -3,3 +3,15 @@
     display: grid
     grid-gap: $gutterWidth
     grid-template-columns: 1fr
+
+@media screen and (min-width: 48rem)
+  #portfolio
+    grid-template-columns: repeat(2, 1fr) !important
+
+@media screen and (min-width: 48rem) and (orientation: landscape)
+  #portfolio
+    grid-template-columns: repeat(3, 1fr) !important
+
+@media screen and (min-width: 60rem)
+  #portfolio
+    grid-template-columns: repeat(3, 1fr) !important

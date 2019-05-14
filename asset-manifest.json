@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4a726e8b.chunk.css",
+    "main.js": "/static/js/main.040093c2.chunk.js",
+    "main.js.map": "/static/js/main.040093c2.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.9f918371.chunk.js": "/static/js/2.9f918371.chunk.js",
+    "static/js/2.9f918371.chunk.js.map": "/static/js/2.9f918371.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ebc97ace6b3a33a0d33abfe35296c62e.js": "/precache-manifest.ebc97ace6b3a33a0d33abfe35296c62e.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.4a726e8b.chunk.css.map": "/static/css/main.4a726e8b.chunk.css.map",
+    "static/media/billlee.png": "/static/media/billlee.957d0b32.png",
+    "static/media/billlee.webp": "/static/media/billlee.bb7168ac.webp",
+    "static/media/camlab.webp": "/static/media/camlab.2ab9a589.webp",
+    "static/media/camlab.png": "/static/media/camlab.bf9e517e.png",
+    "static/media/logo-large.svg": "/static/media/logo-large.d885e70b.svg",
+    "static/media/logo.svg": "/static/media/logo.6bb0a3cf.svg",
+    "static/media/memory-game.webp": "/static/media/memory-game.05a29a7a.webp",
+    "static/media/memory-game.png": "/static/media/memory-game.19b18731.png",
+    "static/media/profile-picture.jpeg": "/static/media/profile-picture.f7ae0414.jpeg"
+  }
+}

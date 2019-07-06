@@ -14,7 +14,7 @@ const projectsDB = [
     webPImage: pamelaGottiWebp,
     image: pamelaGottiPng,
     title: 'Pamela Gotti',
-    description: 'Sito personale della psicologa, ipnologa e consulente sessuale Pamela Gotti',
+    description: 'Sito personale della psicologa, ipnologa e consulente sessuale Pamela Gotti.',
     link: 'https://pamelagotti.netlify.com/'
   },
   {

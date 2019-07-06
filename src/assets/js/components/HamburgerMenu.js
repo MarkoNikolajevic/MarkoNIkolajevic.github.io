@@ -14,9 +14,11 @@ class HamburgerMenu extends React.Component {
     }));
     const hamburger = document.querySelector('.hamburger-menu');
     const navMobile = document.querySelector('.nav-mobile');
+    const body = document.querySelector('body');
 
     hamburger.classList.toggle('animated');
     navMobile.classList.toggle('show-menu-mobile');
+    body.classList.toggle('no-scroll');
     closeNav();
   }
 
@@ -39,8 +41,10 @@ function closeNav() {
     elem.addEventListener('click', function() {
       const hamburger = document.querySelector('.hamburger-menu');
       const nav = document.querySelector('.nav-mobile');
+      const body = document.querySelector('body');
       nav.classList.remove('show-menu-mobile');
       hamburger.classList.remove('animated');
+      body.classList.toggle('no-scroll');
     });
   });
 }

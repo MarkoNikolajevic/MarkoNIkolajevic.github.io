@@ -4,9 +4,19 @@ import camlabWebp from '../../img/camlab.webp'
 import camlabPng from '../../img/camlab.png'
 import memoryWebp from '../../img/memory-game.webp'
 import memoryPng from '../../img/memory-game.png'
+import pamelaGottiWebp from '../../img/pamelagotti.webp'
+import pamelaGottiPng from '../../img/pamelagotti.png'
 
 
 const projectsDB = [
+  {
+    id: 'pamelaGotti',
+    webPImage: pamelaGottiWebp,
+    image: pamelaGottiPng,
+    title: 'Pamela Gotti',
+    description: 'Sito personale della psicologa, ipnologa e consulente sessuale Pamela Gotti',
+    link: 'https://pamelagotti.netlify.com/'
+  },
   {
     id: 'billLee',
     webPImage: billWebp,

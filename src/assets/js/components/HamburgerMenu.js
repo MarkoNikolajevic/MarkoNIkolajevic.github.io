@@ -19,9 +19,6 @@ class HamburgerMenu extends React.Component {
     hamburger.classList.toggle('animated');
     navMobile.classList.toggle('show-menu-mobile');
     body.classList.toggle('no-scroll');
-    body.ontouchend = (e) => {
-      e.preventDefault();
-    }
     closeNav();
   }
 

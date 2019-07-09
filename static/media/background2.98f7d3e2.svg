@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="814" width="1440">
+  <defs>
+    <rect id="rect-1" opacity="1" x="0" y="0" width="1440" height="814"/>
+    <rect id="rect-2" opacity="1" x="0" y="0" width="1440" height="814" rx="0" ry="0"/>
+    <mask id="mask-3" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
+      <rect opacity="1" x="0" y="0" width="1440" height="814" fill="Black"/>
+      <use xlink:href="#rect-2" fill="White"/>
+    </mask>
+    <rect id="rect-4" opacity="1" x="-8.733280765227391e-13" y="-22.054187192118263" width="1440" height="858.1083743842365" rx="0" ry="0"/>
+    <linearGradient id="linearGradient-5" x1="0.5983541666666666" y1="-0.10213345006090134" x2="0.6610208333333333" y2="1.0169572168087697">
+      <stop offset="0" stop-color="rgb(0,0,0)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(218,218,217)" stop-opacity="1"/>
+    </linearGradient>
+    <path id="path-6" opacity="1" fill-rule="evenodd" d="M-681.3200000000002,-509.4397613885247 L2397.8,-509.4397613885247 C2494.38512928645,-509.4397613885247 2572.8,-431.0248906749747 2572.8,-334.4397613885247 L2572.8,-151.12941656093852 C2572.8,-54.54428727448851 2494.38512928645,23.870583439061477 2397.8,23.870583439061477 L-681.3200000000002,23.870583439061477 C-777.9051292864501,23.870583439061477 -856.3200000000002,-54.54428727448851 -856.3200000000002,-151.12941656093852 L-856.3200000000002,-334.4397613885247 C-856.3200000000002,-431.0248906749747 -777.9051292864502,-509.43976138852463 -681.3200000000002,-509.4397613885247Z"/>
+    <linearGradient id="linearGradient-7" x1="0.5983541666666666" y1="-0.10213345006090134" x2="0.6610208333333333" y2="1.0169572168087697">
+      <stop offset="0" stop-color="rgb(0,0,0)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(218,218,217)" stop-opacity="1"/>
+    </linearGradient>
+    <path id="path-8" opacity="1" fill-rule="evenodd" d="M451.48,169.22772629620385 L3530.6,169.22772629620385 C3627.18512928645,169.22772629620385 3705.6,247.64259700975384 3705.6,344.22772629620385 L3705.6,527.53807112379 C3705.6,624.1232004102401 3627.18512928645,702.53807112379 3530.6,702.53807112379 L451.48,702.53807112379 C354.89487071355006,702.53807112379 276.48,624.1232004102401 276.48,527.53807112379 L276.48,344.22772629620385 C276.48,247.64259700975387 354.89487071354995,169.22772629620388 451.48,169.22772629620385Z"/>
+    <linearGradient id="linearGradient-9" x1="0.5983541666666666" y1="-0.10213345006090134" x2="0.6610208333333333" y2="1.0169572168087697">
+      <stop offset="0" stop-color="rgb(0,0,0)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(218,218,217)" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="mask-10" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
+      <rect opacity="1" x="0" y="0" width="1440" height="814" fill="Black"/>
+      <use xlink:href="#path-8" fill="White"/>
+    </mask>
+    <path id="path-11" opacity="1" fill-rule="evenodd" d="M-550.3367973053277,781.9179325717896 L2252.303202694672,781.9179325717896 C2348.888331981122,781.9179325717896 2427.303202694672,860.3328032853397 2427.303202694672,956.9179325717896 L2427.303202694672,1279.5706419313956 C2427.303202694672,1376.1557712178455 2348.888331981122,1454.5706419313956 2252.303202694672,1454.5706419313956 L-550.3367973053277,1454.5706419313956 C-646.9219265917776,1454.5706419313956 -725.3367973053277,1376.1557712178455 -725.3367973053277,1279.5706419313956 L-725.3367973053277,956.9179325717896 C-725.3367973053277,860.3328032853397 -646.9219265917777,781.9179325717896 -550.3367973053277,781.9179325717896Z"/>
+    <linearGradient id="linearGradient-12" x1="0.5983541666666666" y1="-0.10213345006090134" x2="0.6610208333333333" y2="1.0169572168087697">
+      <stop offset="0" stop-color="rgb(0,0,0)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(218,218,217)" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <g opacity="1">
+      <g opacity="1">
+        <g opacity="1">
+          <use xlink:href="#rect-2" fill="rgb(0,0,0)" fill-opacity="1"/>
+        </g>
+        <g mask="url(#mask-3)">
+          <g opacity="1">
+            <use xlink:href="#rect-4" fill="url(#linearGradient-5)" fill-opacity="1"/>
+          </g>
+          <g transform="translate(858.24, -242.7845889747316) rotate(-26.000009296668345) translate(-858.24, 242.7845889747316)" opacity="0.09830729166666667">
+            <use xlink:href="#path-6" fill="url(#linearGradient-7)" fill-opacity="1"/>
+          </g>
+          <g opacity="1">
+            <g transform="translate(1991.04, 435.88289870999694) rotate(-26.000009296668345) translate(-1991.04, -435.88289870999694)" opacity="0.2">
+              <use xlink:href="#path-8" fill="url(#linearGradient-9)" fill-opacity="1"/>
+            </g>
+            <g mask="url(#mask-10)"/>
+          </g>
+          <g transform="translate(850.9832026946723, 1118.2442872515926) rotate(-26.000009296668345) translate(-850.9832026946723, -1118.2442872515926)" opacity="0.2">
+            <use xlink:href="#path-11" fill="url(#linearGradient-12)" fill-opacity="1"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

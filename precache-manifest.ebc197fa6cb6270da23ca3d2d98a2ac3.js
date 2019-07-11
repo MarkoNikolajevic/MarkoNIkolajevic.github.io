@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0ce0d170668a6fce7219bd23fdc6b0ca",
+    "revision": "121a937371c4c6d6b72904b05f77dd0b",
     "url": "/index.html"
   },
   {
-    "revision": "81655c9cd24427156bd2",
+    "revision": "5d1eadf8514c0b7be36f",
     "url": "/static/css/main.69d33846.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.785d98be.chunk.js"
   },
   {
-    "revision": "81655c9cd24427156bd2",
-    "url": "/static/js/main.120185f8.chunk.js"
+    "revision": "5d1eadf8514c0b7be36f",
+    "url": "/static/js/main.3ddd7fe8.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -28,16 +28,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/background2.98f7d3e2.svg"
   },
   {
-    "revision": "0e1c9828fa729da5e57ffa62ea074c79",
-    "url": "/static/media/billlee.0e1c9828.webp"
+    "revision": "9396b38c385aa68ccc5d34024640f942",
+    "url": "/static/media/billlee.9396b38c.webp"
   },
   {
     "revision": "957d0b32b87b62be4464008b42d26985",
     "url": "/static/media/billlee.957d0b32.png"
   },
   {
-    "revision": "45c4bf9bf87cbfbe62498d7360aa9e4b",
-    "url": "/static/media/camlab.45c4bf9b.webp"
+    "revision": "6b92049b6d783dcddc3dd515c1c003a4",
+    "url": "/static/media/camlab.6b92049b.webp"
   },
   {
     "revision": "bf9e517eaeac5c459081219dd564b867",
@@ -56,16 +56,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/memory-game.19b18731.png"
   },
   {
-    "revision": "33cf4e8a55877e4b5bdd79ff91003968",
-    "url": "/static/media/memory-game.33cf4e8a.webp"
+    "revision": "5f6476d7adc91f2d6b1f62356cdb42c2",
+    "url": "/static/media/memory-game.5f6476d7.webp"
   },
   {
-    "revision": "0ba359129d2ed935a1153d427cb97677",
-    "url": "/static/media/pamelagotti.0ba35912.png"
+    "revision": "39a94a521cee447b05609cc98fbf5c19",
+    "url": "/static/media/pamelagotti.39a94a52.webp"
   },
   {
-    "revision": "3614b0eb89b334640ffcb82fb0214719",
-    "url": "/static/media/pamelagotti.3614b0eb.webp"
+    "revision": "530a2239cff63309aef08250f5133605",
+    "url": "/static/media/pamelagotti.530a2239.png"
   },
   {
     "revision": "f7ae0414ca2ecb6ac2e177b8788c9366",

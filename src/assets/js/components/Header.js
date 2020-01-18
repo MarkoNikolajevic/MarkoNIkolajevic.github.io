@@ -1,20 +1,20 @@
-import React from 'react';
+import React from 'react'
+import Navbar from './Navbar'
+import MobileNav from './MobileNav'
 
-import Navbar from './Navbar';
-
-const Header = () => {
+function Header() {
   return (
-    <header className='header'>
+    <header className='main-header'>
       <Navbar />
+      <MobileNav />
       <div className='header-text'>
-        <h1 className='main-title'>
-          Marko
-          <br /> Nikolajević
-        </h1>
-        <p className='subtitle'>Web developer | Web designer</p>
+        <h1 className='main-title'>Marko<br />Nikolajević</h1>
+        <p className='intro'>
+          Sono un web developer e web designer situato a Trieste.
+        </p>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

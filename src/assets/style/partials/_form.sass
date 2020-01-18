@@ -1,38 +1,43 @@
 #contact
-  +section-mobile-margin
-  background: $primary
-  padding: $gutterWidth
+  background: $primaryColor
+  padding: 3rem $gutterWidth
+  color: $secondaryColor
 
   .form
-    +flex-col
+    display: flex
+    flex-direction: column
 
     label
       padding: 20px 0 5px 0
       font-weight: 700
+      letter-spacing: 1.2px
       text-transform: uppercase
       font-size: 1rem
 
     input,
     textarea
-      margin: 10px 0 15px 0
-      padding: 10px 3px
-      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(238, 238, 238, 0.5)
-      border-radius: 7px
-      border: none
-      &:placeholder
+      padding: 7px 3px
+      letter-spacing: 1px
+      &::placeholder
         opacity: 0.7
 
     .submit-btn
       width: 220px
       height: 40px
-      background: $accent
+      background: $accentColor
       cursor: pointer
-      border: 1px solid $accent
+      border: 1px solid $accentColor
       text-transform: uppercase
-      border-radius: 7px
-      color: $primary
-      margin: 20px auto
+      border-radius: 5px
+      color: $secondaryColor
+      margin: 1.25rem auto 1rem auto
       +transition
       &:hover
-        background: darken($accent, 13)
-        transform: translateY(-3px)
+        background: darken($accentColor, 10)
+        transform: translateY(-2px)
+
+
+@media screen and (min-width: 48rem)
+  .form
+    width: 80vw !important
+    margin: 0 auto

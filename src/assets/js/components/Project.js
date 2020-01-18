@@ -1,31 +1,22 @@
-import React from 'react';
+import React from 'react'
 
-const Project = props => {
+function Project(props) {
   return (
     <div className='project-card'>
-      <picture className='project-img'>
-        <source srcSet={props.webpImg} type='image/webp' />
-        <img src={props.img} alt={props.title} />
+      <picture className='project-image'>
+        <source srcSet={props.webPImage} type='image/webp' />
+        <img src={props.image} alt={props.title} />
       </picture>
-      <div className='project-info'>
+      <div className='project-text'>
         <h4 className='project-title'>{props.title}</h4>
-        <p className='project-desc'>{props.desc}</p>
-        <div className='project-links'>
-          <a className='view-case' href={props.viewCase}>
-            Info
-          </a>
-          <a
-            className='link-site'
-            href={props.linkSite}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            Sito
-          </a>
-        </div>
+        <p className='project-description'>{props.description}</p>
+        <a className='project-link' href={props.link} target='_blank' rel='noopener noreferrer'>
+          Visita
+          <i className='fas fa-arrow-right'></i>
+        </a>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Project;
+export default Project

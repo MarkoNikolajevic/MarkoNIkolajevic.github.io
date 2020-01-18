@@ -1,19 +1,29 @@
-import React, { useState } from 'react';
+import React from 'react'
+import Logo from './Logo'
+import MediaQuery from 'react-responsive'
+import NavLink from './NavLink'
+import HamburgerMenu from './HamburgerMenu'
 
-import HamburgerMenu from './HamburgerMenu';
-import MobileNav from './MobileNav';
-import Logo from './Logo';
-
-const Navbar = () => {
-  // hamburger menu state
-  const [open, setOpen] = useState(false);
+function Navbar() {
   return (
     <nav className='navbar nav-flex'>
       <Logo />
-      <HamburgerMenu open={open} setOpen={setOpen} />
-      <MobileNav open={open} setOpen={setOpen} />
+      <MediaQuery query='(max-width: 768px)'>
+        <HamburgerMenu />
+      </MediaQuery>
+      <MediaQuery query='(min-width: 769px)'>
+        <NavLink
+          link={{url: '#about', text: 'Su di me'}}
+        />
+        <NavLink
+          link={{url: '#portfolio', text: 'Portfolio'}}
+        />
+        <NavLink
+          link={{url: '#contact', text: 'Contatti'}}
+        />
+      </MediaQuery>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

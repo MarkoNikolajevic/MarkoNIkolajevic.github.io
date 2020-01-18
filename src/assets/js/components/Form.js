@@ -1,59 +1,68 @@
-import React, { useState } from 'react';
+import React from 'react'
 
-const Form = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+class Form extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      email: '',
+      message: ''
+    };
 
-  const onChange = event => {
-    setName(event.target.value);
-    setEmail(event.target.value);
-    setMessage(event.target.value);
-  };
+    this.handleChange = this.handleChange.bind(this);
+  }
 
-  return (
-    <section id='contact'>
-      <form
-        action='https://formspree.io/mrknikolajevic@gmail.com'
-        method='POST'
-        className='form'
-      >
-        <label htmlFor='name'>Nome</label>
-        <input
-          type='text'
-          id='name'
-          name='name'
-          placeholder='Scrivi il tuo nome'
-          value={name}
-          onChange={onChange}
-          required
-        />
-        <label htmlFor='email'>Email</label>
-        <input
-          type='email'
-          id='email'
-          name='_replyto'
-          placeholder='Scrivi la tue email'
-          value={email}
-          onChange={onChange}
-          required
-        />
-        <label htmlFor='message'>Messaggio</label>
-        <textarea
-          id='message'
-          name='message'
-          rows='5'
-          placeholder='Scrivi il tuo messaggio'
-          value={message}
-          onChange={onChange}
-          required
-        ></textarea>
-        <button type='submit' className='submit-btn'>
-          Invia
-        </button>
-      </form>
-    </section>
-  );
-};
+  handleChange(event) {
+    const target = event.target;
+    const value = target.value;
+    const id = target.id;
 
-export default Form;
+    this.setState({
+      [id]: value
+    })
+  }
+
+  render() {
+    return (
+      <section id='contact'>
+        <form
+          action='https://formspree.io/mrknikolajevic@gmail.com'
+          method='POST'
+          className='form'
+        >
+          <label htmlFor='name'>Nome</label>
+          <input
+            id='name'
+            type='text'
+            name='name'
+            placeholder='Scrivi il tuo nome'
+            onChange={this.handleChange}
+            required
+          />
+          <label htmlFor='email'>Email</label>
+          <input
+            id='email'
+            type='email'
+            name='_replyto'
+            placeholder='Scrivi la tua email'
+            onChange = {this.handleChange}
+            required
+          />
+          <label htmlFor='message'>Messaggio</label>
+          <textarea
+            id='message'
+            name='message'
+            rows='7'
+            placeholder='Scrivi il tuo messaggio'
+            onChange= {this.handleChange}
+            required
+          >
+          </textarea>
+          <button type='submit' className='submit-btn'>Invia</button>
+        </form>
+      </section>
+    )
+  }
+}
+
+export default Form

@@ -1,25 +1,27 @@
 .footer
-  background: $tertiaryColor
-  color: $primaryColor
-  padding: $gutterWidth
-  display: flex
-  flex-direction: column
+  background: 
+    image: url('../../img/footer-bg.svg')
+    position: center center
+    repeat: no-repeat
+  height: 222px
+  color: $secondary
+  +flex-col
   align-items: center
-  justify-content: flex-end
+  justify-content: flex-start
 
 .footer-links-container
   width: 100%
   display: flex
   justify-content: center
-  align-self: center
+  align-items: center
 
 .footer-links
   text-align: center
   padding-top: 2rem
 
-.footer-link
+.social-link
   text-decoration: none
-  color: lighten($primaryColor, 50)
+  color: lighten($secondary, 50)
   font-size: 2rem
   padding: 0 10px
 
@@ -27,20 +29,16 @@
   +transition
   &:hover
     color: $github
-    transform: scale(1.2)
+    transform: scale(1.1)
 
 .fa-twitter
   +transition
   &:hover
     color: $twitter
-    transform: scale(1.2)
+    transform: scale(1.1)
 
 .fa-linkedin-in
   +transition
   &:hover
     color: $linkedin
-    transform: scale(1.2)
-
-
-  .copyright
-    padding: 0
+    transform: scale(1.1)

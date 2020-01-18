@@ -1,15 +1,12 @@
 .project-card
-  background: $tertiaryColor
+  background: $primary
   border-radius: 5px
   box-shadow: 0 5px 10px 0 rgba(33, 33, 33, 0.7)
   +transition
   &:hover
     box-shadow: 0 7px 13px 0 rgba(33, 33, 33, 0.7)
-    transform: scale(1.025)
-  &:hover .fa-arrow-right
-    animation: arrow-animation 1.5s infinite
 
-  .project-image
+  .project-img
     width: 100%
     border-top-left-radius: 5px
     border-top-right-radius: 5px
@@ -17,39 +14,30 @@
     img
       width: 100%
 
-  .project-text
+  .project-info
     padding: 0 1.25rem 1.25rem 1.25rem
-    color: $primaryColor
+    color: $secondary
 
     .project-title
       font-size: 1.25rem
       letter-spacing: 1.2px
       line-height: 1.5rem
-
-    .project-description
+      
+    .project-desc
       font-size: 1rem
       letter-spacing: 1px
       opacity: 0.7
       line-height: 1.25rem
 
-    .project-link
-      text-decoration: none
-      font-size: 1.05rem
-      letter-spacing: 1px
-      color: $primaryColor
+    .project-links
       display: flex
+      justify-content: space-between
       align-items: center
-      +transition
 
-      .fa-arrow-right
-        padding-left: 10px
-
-// Arrow animation
-
-@keyframes arrow-animation
-  0%
-    transform: none
-  50%
-    transform: translateX(20px)
-  100%
-    transform: none
+      .view-case,
+      .link-site
+        text-decoration: none
+        font-size: 1.05rem
+        color: $secondary
+        +transition
+    

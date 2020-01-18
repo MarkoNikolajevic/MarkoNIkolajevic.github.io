@@ -1,23 +1,22 @@
-import React from 'react'
-import Project from './Project'
-import projectsDB from './projectsDB'
+import React from 'react';
 
-function Portfolio() {
-  const projectCard = projectsDB.map(project =>
+import Project from './Project';
+import projectsDB from './projectsDB';
+
+const Portfolio = () => {
+  const projectCard = projectsDB.map(project => (
     <Project
       key={project.id}
-      webP={project.webPImage}
-      image={project.image}
+      webP={project.webpImg}
+      img={project.img}
       title={project.title}
-      description={project.description}
-      link={project.link}
+      desc={project.desc}
+      viewCase={project.viewCase}
+      linkSite={project.linkSite}
     />
-  )
-  return (
-    <section id='portfolio'>
-      {projectCard}
-    </section>
-  )
-}
+  ));
 
-export default Portfolio
+  return <section id='portfolio'>{projectCard}</section>;
+};
+
+export default Portfolio;

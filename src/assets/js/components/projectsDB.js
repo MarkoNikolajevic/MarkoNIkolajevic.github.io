@@ -1,46 +1,52 @@
-import billWebp from '../../img/billlee.webp'
-import billPng from '../../img/billlee.png'
-import camlabWebp from '../../img/camlab.webp'
-import camlabPng from '../../img/camlab.png'
-import memoryWebp from '../../img/memory-game.webp'
-import memoryPng from '../../img/memory-game.png'
-import pamelaGottiWebp from '../../img/pamelagotti.webp'
-import pamelaGottiPng from '../../img/pamelagotti.png'
+import billWebp from '../../img/bill-lee.webp';
+import billImg from '../../img/bill-lee.png';
+import camlabWebp from '../../img/camlab.webp';
+import camlabImg from '../../img/camlab.png';
+import memoryWebp from '../../img/memory.webp';
+import memoryImg from '../../img/memory.png';
+import pamelaGottiImg from '../../img/pamela-gotti.png';
+import pamelaGottiWebp from '../../img/pamela-gotti.webp';
 
-
-const projectsDB = [
+const projectDB = [
   {
     id: 'pamelaGotti',
-    webPImage: pamelaGottiWebp,
-    image: pamelaGottiPng,
+    webpImg: pamelaGottiWebp,
+    img: pamelaGottiImg,
     title: 'Pamela Gotti',
-    description: 'Sito personale della psicologa, ipnologa e consulente sessuale Pamela Gotti.',
-    link: 'https://pamelagotti.netlify.com/'
+    desc:
+      'Sito personale della psicologa, ipnologa e consulente sessuola, Pamela Gotti',
+    viewCase: '#',
+    linkSite: '#'
   },
   {
     id: 'billLee',
-    webPImage: billWebp,
-    image: billPng,
+    webpImg: billWebp,
+    img: billImg,
     title: 'Bill Lee',
-    description: 'Sito personale del grande artista e musicista Bill Lee Curtis.',
-    link: 'https://www.billleecurtis.com/'
+    desc: 'Sito personale del grande artista e musicista Bill Lee Curtis',
+    viewCase: '#',
+    linkSite: 'https://www.billleecurtis.com/'
   },
   {
     id: 'camlab',
-    webPImage: camlabWebp,
-    image: camlabPng,
+    webpImg: camlabWebp,
+    img: camlabImg,
     title: 'CamLab Trieste',
-    description: 'Gruppo professionale di wellness e cura della persona situato a Trieste.',
-    link: 'https://www.camlabtrieste.com/'
+    desc:
+      'Gruppo professionale di wellness e cura della persona situato a Trieste',
+    viewCase: '#',
+    linkSite: 'https://www.camlabtrieste.com/'
   },
   {
-    id: 'memoryGame',
-    webPImage: memoryWebp,
-    image: memoryPng,
+    id: 'memory',
+    webpImg: memoryWebp,
+    img: memoryImg,
     title: 'Memory Game',
-    description: 'Browser game creato per il programma Front End NanoDegree su Udacity.',
-    link: 'https://www.markonikolajevic.com/memory-game/'
+    desc:
+      'Browser game creato per il programma Front End NanoDegree su Udacity',
+    viewCase: '#',
+    linkSite: 'https://www.markonikolajevic.com/memory-game/'
   }
-]
+];
 
-export default projectsDB
+export default projectDB;

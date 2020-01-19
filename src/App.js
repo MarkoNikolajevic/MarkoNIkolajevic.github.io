@@ -8,14 +8,20 @@ import Portfolio from './assets/js/components/Portfolio';
 import Form from './assets/js/components/Form';
 import Footer from './assets/js/components/Footer';
 
+import restyling from './assets/img/restyling.png';
+
 function App() {
   return (
     <div className='App'>
-      <Header />
+      <h1>Restyling in corso...</h1>
+      <div className='restyling'>
+        <img src={restyling} alt='developer' />
+      </div>
+      {/* <Header />
       <About />
       <Portfolio />
       <Form />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

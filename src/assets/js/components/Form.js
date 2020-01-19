@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
 const Form = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [inputValues, setInputValues] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
 
   const onChange = event => {
-    setName(event.target.value);
-    setEmail(event.target.value);
-    setMessage(event.target.value);
+    setInputValues(event.target.value);
   };
 
   return (
@@ -24,7 +24,7 @@ const Form = () => {
           id='name'
           name='name'
           placeholder='Scrivi il tuo nome'
-          value={name}
+          value={inputValues.name}
           onChange={onChange}
           required
         />
@@ -34,7 +34,7 @@ const Form = () => {
           id='email'
           name='_replyto'
           placeholder='Scrivi la tue email'
-          value={email}
+          value={inputValues.email}
           onChange={onChange}
           required
         />
@@ -44,7 +44,7 @@ const Form = () => {
           name='message'
           rows='5'
           placeholder='Scrivi il tuo messaggio'
-          value={message}
+          value={inputValues.message}
           onChange={onChange}
           required
         ></textarea>

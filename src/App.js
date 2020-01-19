@@ -13,15 +13,15 @@ import restyling from './assets/img/restyling.png';
 function App() {
   return (
     <div className='App'>
-      <h1>Restyling in corso...</h1>
+      {/* <h1>Restyling in corso...</h1>
       <div className='restyling'>
         <img src={restyling} alt='developer' />
-      </div>
-      {/* <Header />
+      </div> */}
+      <Header />
       <About />
       <Portfolio />
       <Form />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }

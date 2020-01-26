@@ -1,71 +1,94 @@
 import React, { useState } from 'react';
 
-import { useForm } from 'react-hook-form';
+import axios from 'axios';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
 
-// Ehi, lasciami un tuo contatto
-// {
-//   errors.name && <small className='errorMsg'>Dai, dimmi chi sei!</small>;
-// }
+const formSchema = Yup.object().shape({
+  name: Yup.string().required('Dai, dimmi chi sei!'),
+  email: Yup.string()
+    .email('Ops, così non riesco a risponderti')
+    .required('Ehi, lasciami un contatto'),
+  message: Yup.string().required('Mmmm...non credo di aver capito')
+});
 
-// {
-//   errors.email && (
-//     <small className='errorMsg'>Ops, così non riesco a risponderti!</small>
-//   );
-// }
-// {
-//   errors.message && (
-//     <small className='errorMsg'>Mmmm...non credo di aver capito</small>
-//   );
-// }
-
-const Form = () => {
-  const [inputValues, setInputValues] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const onChange = event => {
-    setInputValues(event.target.value);
+export default () => {
+  const [serverState, setServerState] = useState();
+  const handleServerResponse = (ok, msg) => {
+    setServerState({ ok, msg });
   };
-
+  const handleOnSubmit = (values, actions) => {
+    axios({
+      method: 'POST',
+      url: 'https://formspree.io/mnqpegjj',
+      data: values
+    })
+      .then(response => {
+        actions.setSubmitting(false);
+        actions.resetForm();
+        handleServerResponse(true, 'Grazie');
+      })
+      .catch(error => {
+        actions.setSubmitting(false);
+        handleServerResponse(false, error.response.data.error);
+      });
+  };
   return (
     <section id='contact'>
-      <form
-        action='https://formspree.io/mrknikolajevic@gmail.com'
-        method='POST'
-        className='form'
+      <Formik
+        initialValues={{ name: '', email: '', message: '' }}
+        onSubmit={handleOnSubmit}
+        validationSchema={formSchema}
       >
-        <label htmlFor='name'>Nome</label>
-        <input
-          type='text'
-          id='name'
-          name='name'
-          placeholder='Scrivi il tuo nome'
-        />
+        {({ isSubmitting }) => (
+          <Form className='form' noValidate>
+            <label htmlFor='name'>Nome</label>
+            <Field
+              type='text'
+              id='name'
+              name='name'
+              placeholder='Scrivi il tuo nome'
+            />
+            <ErrorMessage name='name' className='errorMsg' component='small' />
 
-        <label htmlFor='email'>Email</label>
-        <input
-          type='email'
-          id='email'
-          name='email'
-          placeholder='Scrivi la tue email'
-        />
+            <label htmlFor='email'>Email</label>
+            <Field
+              type='email'
+              id='email'
+              name='email'
+              placeholder='Scrivi la tua email'
+            />
+            <ErrorMessage name='email' className='errorMsg' component='small' />
 
-        <label htmlFor='message'>Messaggio</label>
-        <textarea
-          id='message'
-          name='message'
-          rows='5'
-          placeholder='Scrivi il tuo messaggio'
-        ></textarea>
+            <label htmlFor='message'>Messaggio</label>
+            <Field
+              id='message'
+              name='message'
+              rows='5'
+              placeholder='Scrivi il tuo messaggio'
+              component='textarea'
+            />
+            <ErrorMessage
+              name='message'
+              className='errorMsg'
+              component='small'
+            />
 
-        <button type='submit' className='submit-btn'>
-          Invia
-        </button>
-      </form>
+            <button
+              type='submit'
+              disabled={isSubmitting}
+              className='submit-btn'
+            >
+              Invia
+            </button>
+            {serverState && (
+              <p className={!serverState.ok ? 'errorMsg' : ''}>
+                {serverState.msg}
+              </p>
+            )}
+          </Form>
+        )}
+      </Formik>
     </section>
   );
 };
-
-export default Form;

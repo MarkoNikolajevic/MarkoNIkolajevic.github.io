@@ -9,7 +9,7 @@ const MobileNav = () => {
       <NavLink link={{ url: '#about', text: 'Su di me' }} />
       <NavLink link={{ url: '#portfolio', text: 'Portfolio' }} />
       <NavLink link={{ url: '#contact', text: 'Contatti' }} />
-      <div>
+      <div className='footer-links-container'>
         <FooterLink
           socialLink={{
             url: 'https://twitter.com/markez1317',

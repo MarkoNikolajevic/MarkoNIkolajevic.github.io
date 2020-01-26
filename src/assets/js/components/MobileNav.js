@@ -3,6 +3,8 @@ import React from 'react';
 import NavLink from './NavLink';
 import FooterLink from './FooterLink';
 
+import navMobileImg from '../../img/nav-mobile-img.svg';
+
 const MobileNav = () => {
   return (
     <nav className='nav-mobile' role='navigation'>
@@ -29,6 +31,11 @@ const MobileNav = () => {
           }}
         />
       </div>
+      <img
+        className='mobile-nav-img'
+        src={navMobileImg}
+        alt='Marko Nikolajevic'
+      />
     </nav>
   );
 };

@@ -1,15 +1,22 @@
 import React, { useState } from 'react';
 
-const Form = () => {
-  const [inputValues, setInputValues] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+import { useForm } from 'react-hook-form';
 
-  const onChange = event => {
-    setInputValues(event.target.value);
-  };
+// Ehi, lasciami un tuo contatto
+
+const Form = () => {
+  // const [inputValues, setInputValues] = useState({
+  //   name: '',
+  //   email: '',
+  //   message: ''
+  // });
+
+  // const onChange = event => {
+  //   setInputValues(event.target.value);
+  // };
+
+  const { register, errors, handleSubmit } = useForm();
+  const onSubmit = data => console.log(data);
 
   return (
     <section id='contact'>
@@ -17,6 +24,7 @@ const Form = () => {
         action='https://formspree.io/mrknikolajevic@gmail.com'
         method='POST'
         className='form'
+        onSubmit={handleSubmit(onSubmit)}
       >
         <label htmlFor='name'>Nome</label>
         <input
@@ -24,30 +32,36 @@ const Form = () => {
           id='name'
           name='name'
           placeholder='Scrivi il tuo nome'
-          value={inputValues.name}
-          onChange={onChange}
-          required
+          ref={register({ required: true })}
         />
+        {errors.name && <small className='errorMsg'>Dai, dimmi chi sei!</small>}
+
         <label htmlFor='email'>Email</label>
         <input
           type='email'
           id='email'
-          name='_replyto'
+          name='email'
           placeholder='Scrivi la tue email'
-          value={inputValues.email}
-          onChange={onChange}
-          required
+          ref={register({ required: true })}
         />
+        {errors.email && (
+          <small className='errorMsg'>
+            Ops, così non riesco a risponderti!
+          </small>
+        )}
+
         <label htmlFor='message'>Messaggio</label>
         <textarea
           id='message'
           name='message'
           rows='5'
           placeholder='Scrivi il tuo messaggio'
-          value={inputValues.message}
-          onChange={onChange}
-          required
+          ref={register({ required: true })}
         ></textarea>
+        {errors.message && (
+          <small className='errorMsg'>Mmmm...non credo di aver capito</small>
+        )}
+
         <button type='submit' className='submit-btn'>
           Invia
         </button>

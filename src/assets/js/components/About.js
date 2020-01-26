@@ -19,12 +19,13 @@ const About = () => {
       <img src={aboutImg} alt='Marko Nikolajević' className='profile-pic' />
       <p className='personal-desc'>
         Mi sono avvicinato alla programmazione con la specializzazione in 'Data
-        Science' della Johns Hopkins University. <br />
-        Ho, inoltre, seguito corsi di programmazione su Udacity e altre
-        piattaforme come freeCodeCamp e Coursera, migliorando ulteriormente le
-        mie conoscenze.
+        Science' della Johns Hopkins University. Ho, inoltre, seguito corsi di
+        programmazione su Udacity e altre piattaforme come freeCodeCamp e
+        Coursera, migliorando ulteriormente le mie conoscenze.
+        <br />
         <br />
         Se hai tempo da perdere e vuoi leggere di più su di me,
+        <br />
         <a href='#'>clicca qua</a>
       </p>
       <div className='tools-list'>

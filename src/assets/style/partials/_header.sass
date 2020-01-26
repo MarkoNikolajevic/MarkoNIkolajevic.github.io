@@ -1,5 +1,5 @@
 .header
-  height: 100vh
+  height: 667px
   width: 100vw
   background: 
     image: url('../../img/header-bg.svg')
@@ -7,10 +7,16 @@
     repeat: no-repeat
     size: cover
 
+  .header-text-container
+    +flex-col
+    justify-content: center
+    align-items: center
+    height: 70%
+
   .header-text
     text-align: center
     color: $secondary
-    height: 80vh
+    // height: 500px
     +flex-col
     justify-content: center
     align-items: center

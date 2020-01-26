@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.d43342bb.chunk.css",
-    "main.js": "/static/js/main.47740c8d.chunk.js",
-    "main.js.map": "/static/js/main.47740c8d.chunk.js.map",
+    "main.css": "/static/css/main.7189f052.chunk.css",
+    "main.js": "/static/js/main.5170d400.chunk.js",
+    "main.js.map": "/static/js/main.5170d400.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c2b20a0b.js",
     "runtime-main.js.map": "/static/js/runtime-main.c2b20a0b.js.map",
-    "static/js/2.9ef9a59a.chunk.js": "/static/js/2.9ef9a59a.chunk.js",
-    "static/js/2.9ef9a59a.chunk.js.map": "/static/js/2.9ef9a59a.chunk.js.map",
+    "static/js/2.3afaa135.chunk.js": "/static/js/2.3afaa135.chunk.js",
+    "static/js/2.3afaa135.chunk.js.map": "/static/js/2.3afaa135.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1635616fe8dd903cba425e0992d4a2db.js": "/precache-manifest.1635616fe8dd903cba425e0992d4a2db.js",
+    "precache-manifest.5ef2cda7e5dd2576f5425d54510b48db.js": "/precache-manifest.5ef2cda7e5dd2576f5425d54510b48db.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.d43342bb.chunk.css.map": "/static/css/main.d43342bb.chunk.css.map",
-    "static/js/2.9ef9a59a.chunk.js.LICENSE": "/static/js/2.9ef9a59a.chunk.js.LICENSE",
+    "static/css/main.7189f052.chunk.css.map": "/static/css/main.7189f052.chunk.css.map",
+    "static/js/2.3afaa135.chunk.js.LICENSE": "/static/js/2.3afaa135.chunk.js.LICENSE",
     "static/media/about-img.svg": "/static/media/about-img.2fdb533d.svg",
     "static/media/adobexd.svg": "/static/media/adobexd.a3710b8d.svg",
     "static/media/angular.svg": "/static/media/angular.d42820e6.svg",
@@ -33,13 +33,13 @@
     "static/media/pamela-gotti.png": "/static/media/pamela-gotti.04f9d54e.png",
     "static/media/pamela-gotti.webp": "/static/media/pamela-gotti.467bd71f.webp",
     "static/media/react.svg": "/static/media/react.eab72955.svg",
-    "static/media/restyling.png": "/static/media/restyling.58cddc1e.png",
+    "static/media/restyling.svg": "/static/media/restyling.fc1ca14f.svg",
     "static/media/sass.svg": "/static/media/sass.68354d0c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.c2b20a0b.js",
-    "static/js/2.9ef9a59a.chunk.js",
-    "static/css/main.d43342bb.chunk.css",
-    "static/js/main.47740c8d.chunk.js"
+    "static/js/2.3afaa135.chunk.js",
+    "static/css/main.7189f052.chunk.css",
+    "static/js/main.5170d400.chunk.js"
   ]
 }

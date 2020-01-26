@@ -16,7 +16,7 @@ const projectDB = [
     desc:
       'Sito personale della psicologa, ipnologa e consulente sessuola, Pamela Gotti',
     viewCase: '#',
-    linkSite: '#'
+    linkSite: 'http://www.pamelagotti.com/'
   },
   {
     id: 'billLee',

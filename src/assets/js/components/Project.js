@@ -11,16 +11,16 @@ const Project = props => {
         <h4 className='project-title'>{props.title}</h4>
         <p className='project-desc'>{props.desc}</p>
         <div className='project-links'>
-          <a className='view-case' href={props.viewCase}>
+          {/* <a className='view-case' href={props.viewCase}>
             Info
-          </a>
+          </a> */}
           <a
             className='link-site'
             href={props.linkSite}
             target='_blank'
             rel='noopener noreferrer'
           >
-            Sito
+            Visita <i className='fas fa-arrow-right'></i>
           </a>
         </div>
       </div>

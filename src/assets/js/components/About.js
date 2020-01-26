@@ -1,5 +1,6 @@
 import React from 'react';
 
+import aboutImg from '../../img/about-img.svg';
 import html from '../../img/icons/html5.svg';
 import sass from '../../img/icons/sass.svg';
 import javascript from '../../img/icons/javascript.svg';
@@ -15,10 +16,13 @@ const About = () => {
   return (
     <section id='about'>
       {/* Cambiare img in picture */}
-      <img src='#' alt='Marko Nikolajević' className='profile-pic' />
+      <img src={aboutImg} alt='Marko Nikolajević' className='profile-pic' />
       <p className='personal-desc'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit
-        nihil ab labore illo placeat.
+        Mi sono avvicinato alla programmazione con la specializzazione in 'Data
+        Science' della Johns Hopkins University. <br />
+        Ho, inoltre, seguito corsi di programmazione su Udacity e altre
+        piattaforme come freeCodeCamp e Coursera, migliorando ulteriormente le
+        mie conoscenze.
         <br />
         Se hai tempo da perdere e vuoi leggere di più su di me,
         <a href='#'>clicca qua</a>

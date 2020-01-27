@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.7189f052.chunk.css",
-    "main.js": "/static/js/main.5170d400.chunk.js",
-    "main.js.map": "/static/js/main.5170d400.chunk.js.map",
+    "main.css": "/static/css/main.44fa3971.chunk.css",
+    "main.js": "/static/js/main.9e577ad2.chunk.js",
+    "main.js.map": "/static/js/main.9e577ad2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c2b20a0b.js",
     "runtime-main.js.map": "/static/js/runtime-main.c2b20a0b.js.map",
-    "static/js/2.3afaa135.chunk.js": "/static/js/2.3afaa135.chunk.js",
-    "static/js/2.3afaa135.chunk.js.map": "/static/js/2.3afaa135.chunk.js.map",
+    "static/js/2.6752c32e.chunk.js": "/static/js/2.6752c32e.chunk.js",
+    "static/js/2.6752c32e.chunk.js.map": "/static/js/2.6752c32e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5ef2cda7e5dd2576f5425d54510b48db.js": "/precache-manifest.5ef2cda7e5dd2576f5425d54510b48db.js",
+    "precache-manifest.4245f5c75fda654792cfa120d6e99647.js": "/precache-manifest.4245f5c75fda654792cfa120d6e99647.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.7189f052.chunk.css.map": "/static/css/main.7189f052.chunk.css.map",
-    "static/js/2.3afaa135.chunk.js.LICENSE": "/static/js/2.3afaa135.chunk.js.LICENSE",
+    "static/css/main.44fa3971.chunk.css.map": "/static/css/main.44fa3971.chunk.css.map",
+    "static/js/2.6752c32e.chunk.js.LICENSE": "/static/js/2.6752c32e.chunk.js.LICENSE",
     "static/media/about-img.svg": "/static/media/about-img.2fdb533d.svg",
     "static/media/adobexd.svg": "/static/media/adobexd.a3710b8d.svg",
     "static/media/angular.svg": "/static/media/angular.d42820e6.svg",
@@ -20,7 +20,7 @@
     "static/media/camlab.png": "/static/media/camlab.1b8a5543.png",
     "static/media/camlab.webp": "/static/media/camlab.d786400c.webp",
     "static/media/figma.svg": "/static/media/figma.d5726205.svg",
-    "static/media/App.sass": "/static/media/header-large-bg.7d845cd0.svg",
+    "static/media/App.sass": "/static/media/header-large-bg.38c380ad.png",
     "static/media/git.svg": "/static/media/git.3343bf35.svg",
     "static/media/gulp.svg": "/static/media/gulp.269e9c27.svg",
     "static/media/html5.svg": "/static/media/html5.2895d162.svg",
@@ -38,8 +38,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c2b20a0b.js",
-    "static/js/2.3afaa135.chunk.js",
-    "static/css/main.7189f052.chunk.css",
-    "static/js/main.5170d400.chunk.js"
+    "static/js/2.6752c32e.chunk.js",
+    "static/css/main.44fa3971.chunk.css",
+    "static/js/main.9e577ad2.chunk.js"
   ]
 }

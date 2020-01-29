@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.3255e6f2.chunk.css",
-    "main.js": "/static/js/main.f1a8033b.chunk.js",
-    "main.js.map": "/static/js/main.f1a8033b.chunk.js.map",
+    "main.css": "/static/css/main.42e97608.chunk.css",
+    "main.js": "/static/js/main.47101bcc.chunk.js",
+    "main.js.map": "/static/js/main.47101bcc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c2b20a0b.js",
     "runtime-main.js.map": "/static/js/runtime-main.c2b20a0b.js.map",
-    "static/js/2.f930466c.chunk.js": "/static/js/2.f930466c.chunk.js",
-    "static/js/2.f930466c.chunk.js.map": "/static/js/2.f930466c.chunk.js.map",
+    "static/js/2.eaa484ad.chunk.js": "/static/js/2.eaa484ad.chunk.js",
+    "static/js/2.eaa484ad.chunk.js.map": "/static/js/2.eaa484ad.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2e728656f6918105233db39723b116ce.js": "/precache-manifest.2e728656f6918105233db39723b116ce.js",
+    "precache-manifest.d00f9d13a28328ab6543088efe62c2e1.js": "/precache-manifest.d00f9d13a28328ab6543088efe62c2e1.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.3255e6f2.chunk.css.map": "/static/css/main.3255e6f2.chunk.css.map",
-    "static/js/2.f930466c.chunk.js.LICENSE": "/static/js/2.f930466c.chunk.js.LICENSE",
+    "static/css/main.42e97608.chunk.css.map": "/static/css/main.42e97608.chunk.css.map",
+    "static/js/2.eaa484ad.chunk.js.LICENSE": "/static/js/2.eaa484ad.chunk.js.LICENSE",
     "static/media/about-img.svg": "/static/media/about-img.2fdb533d.svg",
     "static/media/adobexd.svg": "/static/media/adobexd.a3710b8d.svg",
     "static/media/angular.svg": "/static/media/angular.d42820e6.svg",
@@ -20,7 +20,7 @@
     "static/media/camlab.png": "/static/media/camlab.1b8a5543.png",
     "static/media/camlab.webp": "/static/media/camlab.d786400c.webp",
     "static/media/figma.svg": "/static/media/figma.d5726205.svg",
-    "static/media/App.sass": "/static/media/header-md-bg.f3746fa3.svg",
+    "static/media/App.sass": "/static/media/header-md-bg.c870cbc4.svg",
     "static/media/form-img.svg": "/static/media/form-img.8cb0ef46.svg",
     "static/media/git.svg": "/static/media/git.3343bf35.svg",
     "static/media/gulp.svg": "/static/media/gulp.269e9c27.svg",
@@ -40,8 +40,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c2b20a0b.js",
-    "static/js/2.f930466c.chunk.js",
-    "static/css/main.3255e6f2.chunk.css",
-    "static/js/main.f1a8033b.chunk.js"
+    "static/js/2.eaa484ad.chunk.js",
+    "static/css/main.42e97608.chunk.css",
+    "static/js/main.47101bcc.chunk.js"
   ]
 }

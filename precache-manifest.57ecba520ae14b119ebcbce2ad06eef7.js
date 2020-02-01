@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a178c1394407ec51d3d26f7e28a3ee29",
+    "revision": "0079989d13434883baef9df09702d68e",
     "url": "/index.html"
   },
   {
-    "revision": "aa0d29160b8ca839cb7a",
+    "revision": "642262496b63dc2d2f3a",
     "url": "/static/css/main.61e378ca.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.f930466c.chunk.js.LICENSE"
   },
   {
-    "revision": "aa0d29160b8ca839cb7a",
-    "url": "/static/js/main.855f83ec.chunk.js"
+    "revision": "642262496b63dc2d2f3a",
+    "url": "/static/js/main.9a11216c.chunk.js"
   },
   {
     "revision": "0d46f7656c748826843c",
@@ -36,20 +36,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/angular.d42820e6.svg"
   },
   {
-    "revision": "457e2bc3a71facc1b4673395d5ea8c9e",
-    "url": "/static/media/bill-lee.457e2bc3.webp"
-  },
-  {
     "revision": "b0357c0d090e358b9c2adc46432c55ab",
     "url": "/static/media/bill-lee.b0357c0d.png"
+  },
+  {
+    "revision": "c457610798b3ae72d30e6cb0b09fe644",
+    "url": "/static/media/bill-lee.c4576107.webp"
   },
   {
     "revision": "1b8a5543112e08c7807e87afc8238cc4",
     "url": "/static/media/camlab.1b8a5543.png"
   },
   {
-    "revision": "d786400ce878074bcefaf648bc71aa19",
-    "url": "/static/media/camlab.d786400c.webp"
+    "revision": "d77e7874b7b58dde9b74d44be2ba99a5",
+    "url": "/static/media/camlab.d77e7874.webp"
   },
   {
     "revision": "d5726205c38799f20359946257f67168",
@@ -100,8 +100,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/logo.aab9b650.svg"
   },
   {
-    "revision": "7444fc4f1dc6d93556de38c4ff575501",
-    "url": "/static/media/memory.7444fc4f.webp"
+    "revision": "2347944be2b36f4f708900108179a68a",
+    "url": "/static/media/memory.2347944b.webp"
   },
   {
     "revision": "e27b1ebdfccae751be36103d452a0bf3",
@@ -116,8 +116,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/pamela-gotti.04f9d54e.png"
   },
   {
-    "revision": "467bd71f77f204fb3d48d953ef1b61f2",
-    "url": "/static/media/pamela-gotti.467bd71f.webp"
+    "revision": "2a7d26d2fcb36876a867350af3461c6e",
+    "url": "/static/media/pamela-gotti.2a7d26d2.webp"
   },
   {
     "revision": "eab729552570eb6775740142163a0866",

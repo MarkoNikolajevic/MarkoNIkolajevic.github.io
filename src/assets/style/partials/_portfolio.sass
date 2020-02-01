@@ -1,8 +1,21 @@
 @import './_projectCard' 
 
 #portfolio
-  +section-mobile-margin
-  padding: $gutterWidth
-  display: grid
-  grid-template-columns: 1fr
-  grid-gap: $gutterWidth
+  // +section-mobile-margin
+  background: linear-gradient(180deg, $tertiary, $secondary)
+  .container
+    padding: $gutterWidth
+    display: grid
+    grid-template-columns: 1fr
+    grid-gap: $gutterWidth
+
+@media screen and (min-width: 768px)
+  #portfolio
+    .container
+      grid-template-columns: repeat(2, 1fr)
+
+@media screen and (min-width: 1200px)
+  #portfolio
+    .container
+      grid-template-columns: repeat(3, 1fr)
+

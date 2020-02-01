@@ -16,18 +16,20 @@ const About = () => {
   return (
     <section id='about'>
       {/* Cambiare img in picture */}
-      <img src={aboutImg} alt='Marko Nikolajević' className='profile-pic' />
-      <p className='personal-desc'>
-        Mi sono avvicinato alla programmazione con la specializzazione in 'Data
-        Science' della Johns Hopkins University. Ho, inoltre, seguito corsi di
-        programmazione su Udacity e altre piattaforme come freeCodeCamp e
-        Coursera, migliorando ulteriormente le mie conoscenze.
-        <br />
-        <br />
-        Se hai tempo da perdere e vuoi leggere di più su di me,
-        <br />
-        <a href='#'>clicca qua</a>
-      </p>
+      <div className='info container'>
+        <img src={aboutImg} alt='Marko Nikolajević' className='profile-pic' />
+        <p className='personal-desc'>
+          Mi sono avvicinato alla programmazione con la specializzazione in
+          'Data Science' della Johns Hopkins University. Ho, inoltre, seguito
+          corsi di programmazione su Udacity e altre piattaforme come
+          freeCodeCamp e Coursera, migliorando ulteriormente le mie conoscenze.
+          <br />
+          <br />
+          Se hai tempo da perdere e vuoi leggere di più su di me,
+          <br />
+          <a href='#'>clicca qua</a>
+        </p>
+      </div>
       <div className='tools-list'>
         <div className='development'>
           <h3>Development</h3>

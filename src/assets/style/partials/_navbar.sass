@@ -1,5 +1,5 @@
 .navbar
-  background: trasparent
+  background: transparent
   padding: $gutterWidth
 
 .nav-flex
@@ -56,3 +56,25 @@
 
 .no-scroll
   overflow: hidden
+
+.d-none-sm
+  display: none 
+
+@media screen and (min-width: 1024px)
+  .d-flex-lg
+    display: flex
+    justify-conyent: center
+    align-items: center
+
+  .nav-link
+    margin: 0 1rem
+    color: $primary
+    text-decoration: none
+    padding: 7px 10px
+    border: 1px solid $primary
+    cursor: pointer
+    border-radius: 50px
+    +transition
+    &:hover
+      background: $accent
+      border: 1px solid $accent

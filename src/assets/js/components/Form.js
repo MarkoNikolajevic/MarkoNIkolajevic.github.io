@@ -4,6 +4,8 @@ import axios from 'axios';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
+import formImg from '../../img/form-img.svg';
+
 const formSchema = Yup.object().shape({
   name: Yup.string().required('Dai, dimmi chi sei!'),
   email: Yup.string()
@@ -35,60 +37,73 @@ export default () => {
   };
   return (
     <section id='contact'>
-      <Formik
-        initialValues={{ name: '', email: '', message: '' }}
-        onSubmit={handleOnSubmit}
-        validationSchema={formSchema}
-      >
-        {({ isSubmitting }) => (
-          <Form className='form' noValidate>
-            <label htmlFor='name'>Nome</label>
-            <Field
-              type='text'
-              id='name'
-              name='name'
-              placeholder='Scrivi il tuo nome'
-            />
-            <ErrorMessage name='name' className='errorMsg' component='small' />
+      <div className='grid-lg container'>
+        <div className='form-img'>
+          <img src={formImg} alt='' />
+        </div>
+        <Formik
+          initialValues={{ name: '', email: '', message: '' }}
+          onSubmit={handleOnSubmit}
+          validationSchema={formSchema}
+        >
+          {({ isSubmitting }) => (
+            <Form className='form' noValidate>
+              <label htmlFor='name'>Nome</label>
+              <Field
+                type='text'
+                id='name'
+                name='name'
+                placeholder='Scrivi il tuo nome'
+              />
+              <ErrorMessage
+                name='name'
+                className='errorMsg'
+                component='small'
+              />
 
-            <label htmlFor='email'>Email</label>
-            <Field
-              type='email'
-              id='email'
-              name='email'
-              placeholder='Scrivi la tua email'
-            />
-            <ErrorMessage name='email' className='errorMsg' component='small' />
+              <label htmlFor='email'>Email</label>
+              <Field
+                type='email'
+                id='email'
+                name='email'
+                placeholder='Scrivi la tua email'
+              />
+              <ErrorMessage
+                name='email'
+                className='errorMsg'
+                component='small'
+              />
 
-            <label htmlFor='message'>Messaggio</label>
-            <Field
-              id='message'
-              name='message'
-              rows='5'
-              placeholder='Scrivi il tuo messaggio'
-              component='textarea'
-            />
-            <ErrorMessage
-              name='message'
-              className='errorMsg'
-              component='small'
-            />
+              <label htmlFor='message'>Messaggio</label>
+              <Field
+                id='message'
+                name='message'
+                rows='5'
+                placeholder='Scrivi il tuo messaggio'
+                component='textarea'
+              />
+              <ErrorMessage
+                name='message'
+                className='errorMsg'
+                component='small'
+              />
 
-            <button
-              type='submit'
-              disabled={isSubmitting}
-              className='submit-btn'
-            >
-              Invia
-            </button>
-            {serverState && (
-              <p className={!serverState.ok ? 'errorMsg' : ''}>
-                {serverState.msg}
-              </p>
-            )}
-          </Form>
-        )}
-      </Formik>
+              <button
+                type='submit'
+                disabled={isSubmitting}
+                className='submit-btn'
+              >
+                Invia
+              </button>
+              {serverState && (
+                <p className={!serverState.ok ? 'errorMsg' : ''}>
+                  {serverState.msg}
+                </p>
+              )}
+            </Form>
+          )}
+        </Formik>
+      </div>
     </section>
   );
 };

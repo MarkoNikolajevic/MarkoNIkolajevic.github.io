@@ -16,7 +16,11 @@ const Portfolio = () => {
     />
   ));
 
-  return <section id='portfolio'>{projectCard}</section>;
+  return (
+    <section id='portfolio'>
+      <div className='container'>{projectCard}</div>
+    </section>
+  );
 };
 
 export default Portfolio;

@@ -34,11 +34,11 @@ const closeNav = () => {
   links.forEach(elem => {
     elem.addEventListener('click', () => {
       const hamburger = document.querySelector('.hamburger-menu');
-      const nav = document.querySelector('.nav-mobile');
+      const navMobile = document.querySelector('.nav-mobile');
       const body = document.querySelector('body');
-      nav.classList.remove('show-mobile-nav');
+      navMobile.classList.remove('show-mobile-nav');
       hamburger.classList.remove('animated');
-      body.classList.toggle('no-scroll');
+      body.classList.remove('no-scroll');
     });
   });
 };

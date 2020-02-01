@@ -1,7 +1,9 @@
 #contact
   +section-mobile-margin
-  background: $primary
   padding: $gutterWidth
+
+  .form-img
+    +d-none
 
   .form
     +flex-col
@@ -40,3 +42,16 @@
       &:hover
         background: darken($accent, 13)
         transform: translateY(-3px)
+
+
+@media screen and (min-width: 900px)
+  #contact
+    
+    .grid-lg
+      display: grid
+      grid-gap: $gutterWidth
+      grid-template-columns: 1fr 1fr
+
+      .form-img
+        display: flex
+        align-items: center

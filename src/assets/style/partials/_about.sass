@@ -3,8 +3,9 @@
   justify-content: center
   align-items: center
   text-align: center
-  +section-mobile-margin
-  padding: 0 $gutterWidth
+  // +section-mobile-margin
+  padding: $gutterWidth
+  background: linear-gradient(180deg, $primary, $tertiary)
 
   .profile-pic
     width: 250px
@@ -20,12 +21,44 @@
 
   .grid
     margin-top: $gutterWidth
+    // display: grid
+    // grid-template-columns: repeat(3, 1fr)
+    // grid-gap: $gutterWidth
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+    .tool
+      flex: 1 1 33%
+
+      img
+        width: 45px
+
+      .tool-name
+        opacity: 0.5
+
+@media screen and (min-width: 550px)
+  .tool
+    flex: 1 1 25% !important
+
+@media screen and (min-width: 600px)
+  .tools-list
     display: grid
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: 1fr 1fr
     grid-gap: $gutterWidth
 
-    img
-      width: 45px
+@media screen and (min-width: 1024px)
+  #about
+    +section-lg-padding
 
-    .tool-name
-      opacity: 0.5
+    .info
+      display: flex
+      flex-direction: row-reverse
+      justify-content: space-between
+      margin: $gutterWidth 0
+
+      .profile-pic
+        flex: 1 1 40%
+
+      .personal-desc
+        flex: 1 1 60%

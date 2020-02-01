@@ -1,5 +1,5 @@
 .header
-  height: 667px
+  height: 100vh
   width: 100vw
   background: 
     image: url('../../img/header-bg.svg')
@@ -16,7 +16,6 @@
   .header-text
     text-align: center
     color: $secondary
-    // height: 500px
     +flex-col
     justify-content: center
     align-items: center
@@ -29,21 +28,28 @@
     .subtitle
       font-size: 1rem
 
-@media screen and (min-width: 600px)
+@media screen and (min-width: 736px)
   .header
     background: 
-      image: url('../../img/header-large-bg.svg')
+      image: url('../../img/header-md-bg.svg')
+
+    .header-text-container
+      align-items: flex-start
 
     .header-text
       text-align: left
       justify-content: flex-start
       align-items: flex-start
-      margin-left: 150px
-      margin-top: 100px
+      margin-left: 100px
 
       .main-title
-        font-size: 3rem
-        line-height: 3.5rem
+        font-size: 2.5rem
+        line-height: 3rem
 
       .subtitle
-        font-size: 1.5rem
+        font-size: 1.25rem
+
+@media screen and (min-width: 1024px)
+  .header
+    background:
+      image: url('../../img/header-lg-bg.svg')

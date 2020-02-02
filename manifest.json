@@ -7,12 +7,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "./logo-pwa.png",
+      "src": "./logo-pwa192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo-pwa.png",
+      "src": "logo-pwa512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

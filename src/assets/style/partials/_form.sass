@@ -9,6 +9,7 @@
     +flex-col
 
     label
+      margin-top: 16px
       padding: 20px 0 5px 0
       font-weight: 700
       text-transform: uppercase
@@ -20,9 +21,12 @@
       padding: 10px 3px
       box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(238, 238, 238, 0.5)
       border-radius: 7px
-      border: none
+      border: 1px solid transparent
+      -webkit-appearance: none
       &:placeholder
         opacity: 0.7
+      &:focus
+        border: 1px solid $accent
 
     .errorMsg
       color: $error
@@ -55,3 +59,6 @@
       .form-img
         display: flex
         align-items: center
+
+        img
+          width: 100%

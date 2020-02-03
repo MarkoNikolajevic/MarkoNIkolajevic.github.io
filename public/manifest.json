@@ -1,5 +1,5 @@
 {
-  "short_name": "Marko\n Nikolajevic",
+  "short_name": "Marko Nikolajevic",
   "name": "Marko Nikolajevic - Web Developer | Web Designer",
   "icons": [{
       "src": "favicon.ico",
@@ -7,18 +7,19 @@
       "type": "image/x-icon"
     },
     {
-      "src": "./logo-pwa.png",
+      "src": "./logo-pwa192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo-pwa.png",
+      "src": "logo-pwa512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
+  "orientation": "portrait",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }

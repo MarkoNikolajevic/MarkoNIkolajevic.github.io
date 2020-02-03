@@ -23,11 +23,11 @@ const About = () => {
           'Data Science' della Johns Hopkins University. Ho, inoltre, seguito
           corsi di programmazione su Udacity e altre piattaforme come
           freeCodeCamp e Coursera, migliorando ulteriormente le mie conoscenze.
-          <br />
+          {/* <br />
           <br />
           Se hai tempo da perdere e vuoi leggere di più su di me,
           <br />
-          <a href='#'>clicca qua</a>
+          <a href='#'>clicca qua</a> */}
         </p>
       </div>
       <div className='tools-list'>

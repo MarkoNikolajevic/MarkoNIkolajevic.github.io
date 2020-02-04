@@ -7,7 +7,7 @@ const Logo = () => {
   return (
     <div className='brand-logo'>
       <picture>
-        <source srcSet={logoBlack} media='(min-width: 1024px)'></source>
+        <source srcSet={logoBlack} media='(min-width: 850px)'></source>
         <img src={logo} alt='Marko Nikolajevic logo' />
       </picture>
     </div>

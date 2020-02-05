@@ -10,7 +10,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <nav className='navbar'>
-      <div class='container nav-flex'>
+      <div className='container nav-flex'>
         <Logo />
         <HamburgerMenu open={open} setOpen={setOpen} />
         <MobileNav open={open} setOpen={setOpen} />

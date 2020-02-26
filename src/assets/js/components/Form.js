@@ -28,7 +28,10 @@ export default () => {
       .then(response => {
         actions.setSubmitting(false);
         actions.resetForm();
-        handleServerResponse(true, 'Grazie');
+        handleServerResponse(
+          true,
+          'Grazie di avermi contattato! Ti risponderò il prima possibile'
+        );
       })
       .catch(error => {
         actions.setSubmitting(false);
@@ -96,7 +99,7 @@ export default () => {
                 Invia
               </button>
               {serverState && (
-                <p className={!serverState.ok ? 'errorMsg' : ''}>
+                <p className={!serverState.ok ? 'errorMsg' : 'okMsg'}>
                   {serverState.msg}
                 </p>
               )}

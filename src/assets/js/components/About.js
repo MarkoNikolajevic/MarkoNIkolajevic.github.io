@@ -1,16 +1,16 @@
 import React from 'react';
 
 import aboutImg from '../../img/about-img.svg';
-import html from '../../img/icons/html5.svg';
-import sass from '../../img/icons/sass.svg';
-import javascript from '../../img/icons/javascript.svg';
-import react from '../../img/icons/react.svg';
-import angular from '../../img/icons/angular.svg';
-import gulp from '../../img/icons/gulp.svg';
-import git from '../../img/icons/git.svg';
-import figma from '../../img/icons/figma.svg';
-import adobexd from '../../img/icons/adobexd.svg';
-import invision from '../../img/icons/invision.svg';
+import { ReactComponent as Html } from '../../img/icons/html5.svg';
+import { ReactComponent as Sass } from '../../img/icons/sass.svg';
+import { ReactComponent as JavaScript } from '../../img/icons/javascript.svg';
+import { ReactComponent as ReactLogo } from '../../img/icons/react.svg';
+import { ReactComponent as Angular } from '../../img/icons/angular.svg';
+import { ReactComponent as Gulp } from '../../img/icons/gulp.svg';
+import { ReactComponent as Git } from '../../img/icons/git.svg';
+import { ReactComponent as Figma } from '../../img/icons/figma.svg';
+import { ReactComponent as AdobeXd } from '../../img/icons/adobexd.svg';
+import { ReactComponent as InVision } from '../../img/icons/invision.svg';
 
 const About = () => {
   return (
@@ -34,34 +34,32 @@ const About = () => {
         <div className='development'>
           <h3>Development</h3>
           <div className='grid'>
-            {/* First row */}
             <div className='tool'>
-              <img src={html} alt='html' />
+              <Html className='tool-logo' />
               <h5 className='tool-name'>HTML</h5>
             </div>
             <div className='tool'>
-              <img src={sass} alt='sass' />
+              <Sass className='tool-logo' />
               <h5 className='tool-name'>Sass</h5>
             </div>
             <div className='tool'>
-              <img src={javascript} alt='javascript' />
+              <JavaScript className='tool-logo' />
               <h5 className='tool-name'>JavaScript</h5>
             </div>
             <div className='tool'>
-              <img src={gulp} alt='gulp' />
+              <Gulp className='tool-logo' />
               <h5 className='tool-name'>gulp</h5>
             </div>
-            {/* Second row */}
             <div className='tool'>
-              <img src={react} alt='react' />
+              <ReactLogo className='tool-logo' />
               <h5 className='tool-name'>React</h5>
             </div>
             <div className='tool'>
-              <img src={angular} alt='angular' />
+              <Angular className='tool-logo' />
               <h5 className='tool-name'>Angular</h5>
             </div>
             <div className='tool'>
-              <img src={git} alt='git' />
+              <Git className='tool-logo' />
               <h5 className='tool-name'>Git</h5>
             </div>
           </div>
@@ -70,15 +68,15 @@ const About = () => {
           <h3>Design</h3>
           <div className='grid'>
             <div className='tool'>
-              <img src={figma} alt='figma' />
+              <Figma className='tool-logo' />
               <h5 className='tool-name'>Figma</h5>
             </div>
             <div className='tool'>
-              <img src={adobexd} alt='adobe xd' />
+              <AdobeXd className='tool-logo' />
               <h5 className='tool-name'>Adobe XD</h5>
             </div>
             <div className='tool'>
-              <img src={invision} alt='InVision' />
+              <InVision className='tool-logo' />
               <h5 className='tool-name'>InVision</h5>
             </div>
           </div>

@@ -31,11 +31,18 @@
     .tool
       flex: 1 1 33%
 
-      img
+      .tool-logo
         width: 45px
 
       .tool-name
         opacity: 0.5
+
+// Icon animation
+@keyframes move-up-down
+  0%, 100%
+    transform: none
+  50%
+    transform: translateY(13px)
 
 @media screen and (min-width: 550px)
   .tool

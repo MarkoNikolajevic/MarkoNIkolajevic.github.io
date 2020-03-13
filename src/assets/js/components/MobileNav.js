@@ -3,7 +3,7 @@ import React from 'react';
 import NavLink from './NavLink';
 import FooterLink from './FooterLink';
 
-import navMobileImg from '../../img/nav-mobile-img.svg';
+import navMobileImg from '../../img/nav-mobile-img.png';
 
 const MobileNav = () => {
   return (

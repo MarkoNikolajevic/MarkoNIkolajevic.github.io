@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
-import formImg from '../../img/form-img.svg';
+import formImg from '../../img/form-img.png';
 
 const formSchema = Yup.object().shape({
   name: Yup.string().required('Dai, dimmi chi sei!'),

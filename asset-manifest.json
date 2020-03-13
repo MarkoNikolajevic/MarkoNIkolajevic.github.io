@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.19a9800e.chunk.css",
-    "main.js": "/static/js/main.b6c4cf1a.chunk.js",
-    "main.js.map": "/static/js/main.b6c4cf1a.chunk.js.map",
+    "main.js": "/static/js/main.c9441f33.chunk.js",
+    "main.js.map": "/static/js/main.c9441f33.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c2b20a0b.js",
     "runtime-main.js.map": "/static/js/runtime-main.c2b20a0b.js.map",
     "static/js/2.921841c6.chunk.js": "/static/js/2.921841c6.chunk.js",
     "static/js/2.921841c6.chunk.js.map": "/static/js/2.921841c6.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.973110d5e5398b037114d554008baa7f.js": "/precache-manifest.973110d5e5398b037114d554008baa7f.js",
+    "precache-manifest.62bf4cc86875e5b3ab3377a35d1d60cb.js": "/precache-manifest.62bf4cc86875e5b3ab3377a35d1d60cb.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.19a9800e.chunk.css.map": "/static/css/main.19a9800e.chunk.css.map",
     "static/js/2.921841c6.chunk.js.LICENSE": "/static/js/2.921841c6.chunk.js.LICENSE",
@@ -20,7 +20,7 @@
     "static/media/camlab.webp": "/static/media/camlab.82558261.webp",
     "static/media/camlab.png": "/static/media/camlab.c3e1ccd0.png",
     "static/media/figma.212e7eea.svg": "/static/media/figma.212e7eea.svg",
-    "static/media/form-img.svg": "/static/media/form-img.8cb0ef46.svg",
+    "static/media/form-img.png": "/static/media/form-img.d748ff38.png",
     "static/media/git.cc45c7f8.svg": "/static/media/git.cc45c7f8.svg",
     "static/media/gulp.1443dca2.svg": "/static/media/gulp.1443dca2.svg",
     "static/media/App.sass": "/static/media/header-md-bg.28877f07.svg",
@@ -30,7 +30,7 @@
     "static/media/logo-black.svg": "/static/media/logo-black.6fe08019.svg",
     "static/media/logo.svg": "/static/media/logo.91711c80.svg",
     "static/media/memory.webp": "/static/media/memory.8767a2fb.webp",
-    "static/media/nav-mobile-img.svg": "/static/media/nav-mobile-img.7c97e192.svg",
+    "static/media/nav-mobile-img.png": "/static/media/nav-mobile-img.7f23f4cb.png",
     "static/media/pamela-gotti.webp": "/static/media/pamela-gotti.258f4e9c.webp",
     "static/media/pamela-gotti.png": "/static/media/pamela-gotti.e1fe3067.png",
     "static/media/react.1178261b.svg": "/static/media/react.1178261b.svg",
@@ -40,6 +40,6 @@
     "static/js/runtime-main.c2b20a0b.js",
     "static/js/2.921841c6.chunk.js",
     "static/css/main.19a9800e.chunk.css",
-    "static/js/main.b6c4cf1a.chunk.js"
+    "static/js/main.c9441f33.chunk.js"
   ]
 }

@@ -1,11 +1,16 @@
 .header
   height: 667px
   width: 100vw
-  background: 
-    image: url('../../img/header-bg.svg')
-    position: center center
-    repeat: no-repeat
-    size: cover
+  position: relative
+  // background: 
+  //   image: url('../../img/header-bg.svg')
+  //   position: center center
+  //   repeat: no-repeat
+  //   size: cover
+
+  .bg-img
+    position: absolute
+    top: 0
 
   .header-text-container
     +flex-col
@@ -33,6 +38,12 @@
     height: 1112px
     background: 
       image: url('../../img/header-md-bg.svg')
+      position: center center
+      repeat: no-repeat
+      size: cover
+
+    .bg-img
+      display: none
 
     .header-text-container
       align-items: flex-start

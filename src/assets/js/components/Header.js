@@ -2,6 +2,8 @@ import React from 'react';
 
 import Navbar from './Navbar';
 
+import { ReactComponent as BgMobile } from '../../img/header-bg.svg';
+
 const Header = () => {
   return (
     <header className='header'>
@@ -15,6 +17,7 @@ const Header = () => {
           <p className='subtitle'>Web developer | Web designer</p>
         </div>
       </div>
+      <BgMobile className='bg-img' />
     </header>
   );
 };

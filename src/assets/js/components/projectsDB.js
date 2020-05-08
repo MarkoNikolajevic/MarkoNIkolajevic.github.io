@@ -6,8 +6,20 @@ import memoryWebp from '../../img/memory.webp';
 import memoryImg from '../../img/memory.png';
 import pamelaGottiImg from '../../img/pamela-gotti.png';
 import pamelaGottiWebp from '../../img/pamela-gotti.webp';
+import myTeamImg from '../../img/my-team.png';
+import myTeamWebp from '../../img/my-team.webp';
 
 const projectDB = [
+  {
+    id: 'myTeam',
+    webpImg: myTeamWebp,
+    img: myTeamImg,
+    title: 'My Team',
+    desc:
+      'Sito creato seguendo le linee guida della challenge su FrontEndMentor',
+    viewCase: '#',
+    linkSite: 'https://my-team.mrknikolajevic.now.sh/',
+  },
   {
     id: 'pamelaGotti',
     webpImg: pamelaGottiWebp,
@@ -16,7 +28,7 @@ const projectDB = [
     desc:
       'Sito personale della psicologa, ipnologa e consulente sessuola, Pamela Gotti',
     viewCase: '#',
-    linkSite: 'http://www.pamelagotti.com/'
+    linkSite: 'http://www.pamelagotti.com/',
   },
   {
     id: 'billLee',
@@ -25,7 +37,7 @@ const projectDB = [
     title: 'Bill Lee',
     desc: 'Sito personale del grande artista e musicista Bill Lee Curtis',
     viewCase: '#',
-    linkSite: 'https://www.billleecurtis.com/'
+    linkSite: 'https://www.billleecurtis.com/',
   },
   {
     id: 'camlab',
@@ -35,7 +47,7 @@ const projectDB = [
     desc:
       'Gruppo professionale di wellness e cura della persona situato a Trieste',
     viewCase: '#',
-    linkSite: 'https://www.camlabtrieste.com/'
+    linkSite: 'https://www.camlabtrieste.com/',
   },
   {
     id: 'memory',
@@ -45,8 +57,8 @@ const projectDB = [
     desc:
       'Browser game creato per il programma Front End NanoDegree su Udacity',
     viewCase: '#',
-    linkSite: 'https://www.markonikolajevic.com/memory-game/'
-  }
+    linkSite: 'https://www.markonikolajevic.com/memory-game/',
+  },
 ];
 
 export default projectDB;

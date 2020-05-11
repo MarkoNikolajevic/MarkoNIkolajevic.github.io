@@ -8,8 +8,20 @@ import pamelaGottiImg from '../../img/pamela-gotti.png';
 import pamelaGottiWebp from '../../img/pamela-gotti.webp';
 import myTeamImg from '../../img/my-team.png';
 import myTeamWebp from '../../img/my-team.webp';
+import rockPaperImg from '../../img/rockPaper.png';
+import rockPaperWebp from '../../img/rockPaper.webp';
 
 const projectDB = [
+  {
+    id: 'rockPaper',
+    webpImg: rockPaperWebp,
+    img: rockPaperImg,
+    title: 'Rock Paper Scissors Lizard Spock',
+    desc:
+      'Gioco stile carta, sasso, forbice creato come challenge su FrontEndMentor',
+    viewCase: '#',
+    linkSite: 'https://rock-paper-scissors-lizard-spock.mrknikolajevic.now.sh/',
+  },
   {
     id: 'myTeam',
     webpImg: myTeamWebp,

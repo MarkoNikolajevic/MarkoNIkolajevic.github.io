@@ -38,7 +38,7 @@ const projectDB = [
     img: pamelaGottiImg,
     title: 'Pamela Gotti',
     desc:
-      'Sito personale della psicologa, ipnologa e consulente sessuola, Pamela Gotti',
+      'Sito personale della psicologa, ipnologa e consulente sessuale, Pamela Gotti',
     viewCase: '#',
     linkSite: 'http://www.pamelagotti.com/',
   },

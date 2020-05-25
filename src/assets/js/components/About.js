@@ -34,31 +34,31 @@ const About = () => {
         <div className='development'>
           <h3>Development</h3>
           <div className='grid'>
-            <div className='tool'>
+            <div className='tool' id='html'>
               <Html className='tool-logo' />
               <h5 className='tool-name'>HTML</h5>
             </div>
-            <div className='tool'>
+            <div className='tool' id='sass'>
               <Sass className='tool-logo' />
               <h5 className='tool-name'>Sass</h5>
             </div>
-            <div className='tool'>
+            <div className='tool' id='javascript'>
               <JavaScript className='tool-logo' />
               <h5 className='tool-name'>JavaScript</h5>
             </div>
-            <div className='tool'>
+            <div className='tool' id='gulp'>
               <Gulp className='tool-logo' />
               <h5 className='tool-name'>gulp</h5>
             </div>
-            <div className='tool'>
+            <div className='tool' id='react'>
               <ReactLogo className='tool-logo' />
               <h5 className='tool-name'>React</h5>
             </div>
-            <div className='tool'>
+            <div className='tool' id='angular'>
               <Angular className='tool-logo' />
               <h5 className='tool-name'>Angular</h5>
             </div>
-            <div className='tool'>
+            <div className='tool' id='git'>
               <Git className='tool-logo' />
               <h5 className='tool-name'>Git</h5>
             </div>
@@ -67,15 +67,15 @@ const About = () => {
         <div className='design'>
           <h3>Design</h3>
           <div className='grid'>
-            <div className='tool'>
+            <div className='tool' id='figma'>
               <Figma className='tool-logo' />
               <h5 className='tool-name'>Figma</h5>
             </div>
-            <div className='tool'>
+            <div className='tool' id='adobexd'>
               <AdobeXd className='tool-logo' />
               <h5 className='tool-name'>Adobe XD</h5>
             </div>
-            <div className='tool'>
+            <div className='tool' id='invision'>
               <InVision className='tool-logo' />
               <h5 className='tool-name'>InVision</h5>
             </div>

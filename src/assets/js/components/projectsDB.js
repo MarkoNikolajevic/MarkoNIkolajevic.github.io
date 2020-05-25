@@ -10,8 +10,20 @@ import myTeamImg from '../../img/my-team.png';
 import myTeamWebp from '../../img/my-team.webp';
 import rockPaperImg from '../../img/rockPaper.png';
 import rockPaperWebp from '../../img/rockPaper.webp';
+import countriesApiImg from '../../img/countryApi.png';
+import countriesApiWebp from '../../img/countryApi.webp';
 
 const projectDB = [
+  {
+    id: 'countryApi',
+    webpImg: countriesApiWebp,
+    img: countriesApiImg,
+    title: 'REST Countries API',
+    desc:
+      'Visualizzazione dei vari stati del mondo usando le Rest Countries api con cambio di tema',
+    viewCase: '#',
+    linkSite: 'https://rest-country-api-frontendmentor.mrknikolajevic.now.sh/',
+  },
   {
     id: 'rockPaper',
     webpImg: rockPaperWebp,

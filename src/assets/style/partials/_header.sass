@@ -1,22 +1,14 @@
 .header
-  height: 667px
+  height: 80vh
   width: 100vw
-  position: relative
-  // background: 
-  //   image: url('../../img/header-bg.svg')
-  //   position: center center
-  //   repeat: no-repeat
-  //   size: cover
-
-  .bg-img
-    position: absolute
-    top: 0
+  +flex-col
+  justify-content: center
+  align-items: center
 
   .header-text-container
     +flex-col
     justify-content: center
     align-items: center
-    height: 70%
 
   .header-text
     text-align: center
@@ -27,11 +19,11 @@
 
     .main-title
       text-transform: uppercase
-      font-size: 2rem
-      line-height: 2.5rem
+      font-size: $h1Small
+      line-height: 3rem
 
     .subtitle
-      font-size: 1rem
+      font-size: $bodyLarge
 
 @media screen and (min-width: 667px)
   .header

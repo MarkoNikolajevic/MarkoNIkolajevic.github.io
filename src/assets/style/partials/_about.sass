@@ -12,7 +12,7 @@
   .profile-pic
     width: 250px
     height: 250px
-    // border-radius: 50%
+    border-radius: 50%
 
   .personal-desc
     +line-height-1rem-text
@@ -23,9 +23,6 @@
 
   .grid
     margin-top: $gutterWidth
-    // display: grid
-    // grid-template-columns: repeat(3, 1fr)
-    // grid-gap: $gutterWidth
     display: flex
     flex-wrap: wrap
     justify-content: space-between
@@ -38,6 +35,39 @@
 
       .tool-name
         opacity: 0.5
+        margin-top: 0
+
+  .btn
+    border: none
+    background: transparent
+    border: 1px solid $primary
+    border-radius: 50px
+    width: 180px
+    height: 40px
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    +transition
+
+    &:hover
+      background: $primary
+
+      a
+        color: $secondary
+
+    a
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 100%
+      height: 100%
+      text-decoration: none
+      color: $primary
+      font-weight: 700
+      letter-spacing: 1.3px
+      +transition
+
 
 // Icon animation
 @keyframes move-up-down

@@ -1,6 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import aboutImg from '../../img/about-img.svg';
+import Button from './Button';
+
+import aboutImg from '../../img/foto.jpg';
 import { ReactComponent as Html } from '../../img/icons/html5.svg';
 import { ReactComponent as Sass } from '../../img/icons/sass.svg';
 import { ReactComponent as JavaScript } from '../../img/icons/javascript.svg';
@@ -23,11 +26,6 @@ const About = () => {
           'Data Science' della Johns Hopkins University. Ho, inoltre, seguito
           corsi di programmazione su Udacity e altre piattaforme come
           freeCodeCamp e Coursera, migliorando ulteriormente le mie conoscenze.
-          {/* <br />
-          <br />
-          Se hai tempo da perdere e vuoi leggere di più su di me,
-          <br />
-          <a href='#'>clicca qua</a> */}
         </p>
       </div>
       <div className='tools-list'>
@@ -82,6 +80,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Button link='portfolio' children='Portfolio' />
     </section>
   );
 };

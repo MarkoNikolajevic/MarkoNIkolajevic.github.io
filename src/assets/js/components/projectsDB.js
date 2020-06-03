@@ -73,16 +73,16 @@ const projectDB = [
     viewCase: '#',
     linkSite: 'https://www.camlabtrieste.com/',
   },
-  // {
-  //   id: 'memory',
-  //   webpImg: memoryWebp,
-  //   img: memoryImg,
-  //   title: 'Memory Game',
-  //   desc:
-  //     'Browser game creato per il programma Front End NanoDegree su Udacity',
-  //   viewCase: '#',
-  //   linkSite: 'https://www.markonikolajevic.com/memory-game/',
-  // },
+  {
+    id: 'memory',
+    webpImg: memoryWebp,
+    img: memoryImg,
+    title: 'Memory Game',
+    desc:
+      'Browser game creato per il programma Front End NanoDegree su Udacity',
+    viewCase: '#',
+    linkSite: 'https://www.markonikolajevic.com/memory-game/index.html',
+  },
 ];
 
 export default projectDB;

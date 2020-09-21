@@ -1,19 +1,59 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const Header = () => {
+import illustration from '../../img/header-illustration.png';
+import Container from './Container';
+import Button from './Button';
+
+const Header = styled.header`
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+`;
+
+Header.Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+Header.Title = styled.h1`
+  text-align: center;
+  text-transform: uppercase;
+  font-size: ${({ theme }) => theme.h1Small};
+  line-height: 3rem;
+`;
+
+Header.Subtitle = styled.p`
+  font-size: ${({ theme }) => theme.bodyLarge};
+`;
+
+Header.Illustration = styled.div`
+  width: 150px;
+  margin: 1.5rem 0;
+
+  img {
+    width: 100%;
+  }
+`;
+
+export default () => {
   return (
-    <header className='header'>
-      <div className='header-text-container'>
-        <div className='header-text'>
-          <h1 className='main-title'>
+    <Header>
+      <Container>
+        <Header.Content>
+          <Header.Title>
             Marko
             <br /> Nikolajević
-          </h1>
-          <p className='subtitle'>Web developer | Web designer</p>
-        </div>
-      </div>
-    </header>
+          </Header.Title>
+          <Header.Subtitle>Web developer | Web designer</Header.Subtitle>
+          <Header.Illustration>
+            <img src={illustration} alt='illustration' />
+          </Header.Illustration>
+          <Button link='portfolio' label='Portfolio' />
+        </Header.Content>
+      </Container>
+    </Header>
   );
 };
-
-export default Header;

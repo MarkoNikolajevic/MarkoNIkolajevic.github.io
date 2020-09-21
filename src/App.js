@@ -1,5 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import { GlobalStyles } from './assets/style/global';
+import { theme } from './assets/style/theme';
+import { ThemeProvider } from 'styled-components';
 
 import './assets/style/App.sass';
 
@@ -11,21 +15,28 @@ import ContactPage from './assets/js/pages/ContactPage';
 import Footer from './assets/js/components/Footer';
 
 function App() {
+  const location = useLocation();
+
   return (
-    <Router>
+    <ThemeProvider theme={theme}>
       <ScrollToTop />
+      <GlobalStyles />
       <Navbar />
-      <Switch>
-        <Route exact path='/' component={Home} />
-      </Switch>
-      <Switch>
-        <Route path='/portfolio' component={PortfolioPage} />
-      </Switch>
-      <Switch>
-        <Route path='/contatti' component={ContactPage} />
-      </Switch>
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.key}>
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route path='/portfolio'>
+            <PortfolioPage />
+          </Route>
+          <Route path='/contatti'>
+            <ContactPage />
+          </Route>
+        </Switch>
+      </AnimatePresence>
       <Footer />
-    </Router>
+    </ThemeProvider>
   );
 }
 

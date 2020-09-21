@@ -1,17 +1,25 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import logo from '../../img/logo.svg';
-import logoBlack from '../../img/logo-black.svg';
 
-const Logo = () => {
+const Logo = styled.div`
+  margin-right: auto;
+  width: 150px;
+
+  picture,
+  img {
+    width: 100%;
+  }
+`;
+
+export default () => {
   return (
-    <div className='brand-logo'>
+    <Logo>
       <picture>
-        <source srcSet={logoBlack} media='(min-width: 850px)'></source>
+        <source srcSet={logo} media='(min-width: 850px)'></source>
         <img src={logo} alt='Marko Nikolajevic logo' />
       </picture>
-    </div>
+    </Logo>
   );
 };
-
-export default Logo;

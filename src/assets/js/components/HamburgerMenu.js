@@ -31,7 +31,7 @@ const HamburgerMenu = ({ open, setOpen }) => {
 const closeNav = () => {
   let links = document.querySelectorAll('.nav-mobile-link');
   links = Array.from(links);
-  links.forEach(elem => {
+  links.forEach((elem) => {
     elem.addEventListener('click', () => {
       const hamburger = document.querySelector('.hamburger-menu');
       const navMobile = document.querySelector('.nav-mobile');

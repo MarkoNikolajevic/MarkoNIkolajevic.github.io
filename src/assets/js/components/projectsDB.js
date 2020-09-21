@@ -81,7 +81,7 @@ const projectDB = [
     desc:
       'Browser game creato per il programma Front End NanoDegree su Udacity',
     viewCase: '#',
-    linkSite: 'https://www.markonikolajevic.com/memory-game/',
+    linkSite: 'https://www.markonikolajevic.com/memory-game/index.html',
   },
 ];
 

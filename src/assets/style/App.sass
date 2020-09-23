@@ -1,0 +1,34 @@
+@import './tools/_variables'
+@import './tools/_normalize'
+@import './tools/_mixins'
+
+@import './partials/_header'
+@import './partials/_navbar'
+@import './partials/_hamburgerMenu'
+@import './partials/_about'
+@import './partials/_portfolio'
+@import './partials/_form'
+@import './partials/_footer'
+
+// Global styles
+
+html
+  scroll-behavior: smooth
+
+html,
+body
+  font-family: $typeface
+
+@media screen and (min-width: 667px)
+  .container
+    margin: auto
+    width: 90vw
+
+@media screen and (min-width: 1024px)
+  .container
+    margin: auto
+    width: 80vw
+
+@media screen and (min-width: 1300px)
+  .container
+    width: 1242px

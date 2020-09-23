@@ -1,0 +1,43 @@
+.footer
+  background: #f5f5f7
+  color: $secondary
+  +flex-col
+  align-items: center
+  justify-content: flex-start
+
+.footer-links-container
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.footer-links
+  text-align: center
+  padding-top: 2rem
+
+.social-link
+  text-decoration: none
+  color: lighten($secondary, 50)
+  font-size: 2rem
+  padding: 0 10px
+
+.fa-github
+  +transition
+  &:hover
+    color: $github
+    transform: scale(1.1)
+
+.fa-twitter
+  +transition
+  &:hover
+    color: $twitter
+    transform: scale(1.1)
+
+.fa-linkedin-in
+  +transition
+  &:hover
+    color: $linkedin
+    transform: scale(1.1)
+
+.copyright
+  font-size: 0.8rem

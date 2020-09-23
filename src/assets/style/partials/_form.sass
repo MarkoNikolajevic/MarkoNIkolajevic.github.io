@@ -1,0 +1,68 @@
+#contact
+  +section-mobile-margin
+  padding: $gutterWidth
+
+  .form-img
+    +d-none
+
+  .form
+    +flex-col
+
+    label
+      margin-top: 16px
+      padding: 20px 0 5px 0
+      font-weight: 700
+      text-transform: uppercase
+      font-size: 1rem
+
+    input,
+    textarea
+      margin: 10px 0 15px 0
+      padding: 10px 3px
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(238, 238, 238, 0.5)
+      border-radius: 7px
+      border: 1px solid transparent
+      -webkit-appearance: none
+      &:placeholder
+        opacity: 0.7
+      &:focus
+        border: 1px solid $accent
+
+    .errorMsg
+      font-weight: 700
+      color: $error
+      +transition
+
+    .okMsg
+      color: $success
+
+    .submit-btn
+      width: 220px
+      height: 40px
+      background: $accent
+      cursor: pointer
+      border: 1px solid $accent
+      text-transform: uppercase
+      border-radius: 7px
+      color: $primary
+      margin: 20px auto
+      +transition
+      &:hover
+        background: darken($accent, 13)
+        transform: translateY(-3px)
+
+
+@media screen and (min-width: 900px)
+  #contact
+    
+    .grid-lg
+      display: grid
+      grid-gap: $gutterWidth
+      grid-template-columns: 1fr 1fr
+
+      .form-img
+        display: flex
+        align-items: center
+
+        img
+          width: 100%

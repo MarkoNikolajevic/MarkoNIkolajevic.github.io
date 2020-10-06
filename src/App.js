@@ -8,7 +8,7 @@ import { ThemeProvider } from 'styled-components';
 import './assets/style/App.sass';
 
 import ScrollToTop from './assets/js/components/ScrollToTop';
-import Navbar from './assets/js/components/Navbar';
+import { Navbar } from './assets/js/components/Navbar';
 import Home from './assets/js/pages/Home';
 import PortfolioPage from './assets/js/pages/PortfolioPage';
 import ContactPage from './assets/js/pages/ContactPage';

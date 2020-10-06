@@ -1,43 +1,22 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { NavLink } from './NavLink';
 
-import NavLink from './NavLink';
-import FooterLink from './FooterLink';
-
-import navMobileImg from '../../img/nav-mobile-img.png';
-
-const MobileNav = () => {
-  return (
-    <nav className='nav-mobile' role='navigation'>
-      <NavLink link={{ url: '#about', text: 'Su di me' }} />
-      <NavLink link={{ url: '#portfolio', text: 'Portfolio' }} />
-      <NavLink link={{ url: '#contact', text: 'Contatti' }} />
-      <div className='footer-links-container'>
-        <FooterLink
-          socialLink={{
-            url: 'https://twitter.com/markez1317',
-            icon: 'fab fa-twitter'
-          }}
-        />
-        <FooterLink
-          socialLink={{
-            url: 'https://github.com/MarkoNikolajevic',
-            icon: 'fab fa-github'
-          }}
-        />
-        <FooterLink
-          socialLink={{
-            url: 'https://www.linkedin.com/in/markonikolajevic/',
-            icon: 'fab fa-linkedin-in'
-          }}
-        />
-      </div>
-      <img
-        className='mobile-nav-img'
-        src={navMobileImg}
-        alt='Marko Nikolajevic'
-      />
-    </nav>
-  );
+const variants = {
+  open: {
+    transition: { staggerChildren: 0.07, delayChildren: 0.2 },
+  },
+  closed: {
+    transition: { staggerChildren: 0.05, staggerDirection: -1 },
+  },
 };
 
-export default MobileNav;
+export const MobileNav = () => (
+  <motion.ul variants={variants}>
+    {itemIds.map((i) => (
+      <NavLink i={i} key={i} />
+    ))}
+  </motion.ul>
+);
+
+const itemIds = [0, 1, 2];

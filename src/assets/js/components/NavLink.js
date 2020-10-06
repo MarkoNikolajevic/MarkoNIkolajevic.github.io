@@ -1,11 +1,31 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
-const NavLink = props => {
-  return (
-    <a className='nav-link nav-mobile-link' href={props.link.url}>
-      {props.link.text}
-    </a>
-  );
+const variants = {
+  open: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      y: { stiffness: 1000, velocity: -100 },
+    },
+  },
+  closed: {
+    y: 50,
+    opacity: 0,
+    transition: {
+      y: { stiffness: 1000 },
+    },
+  },
 };
 
-export default NavLink;
+export const NavLink = ({ i }) => {
+  return (
+    <motion.li
+      variants={variants}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      Prova
+    </motion.li>
+  );
+};

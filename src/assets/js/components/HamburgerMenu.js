@@ -1,46 +1,39 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
-const HamburgerMenu = ({ open, setOpen }) => {
-  const navMobile = document.querySelector('.nav-mobile');
-  const hamburger = document.querySelector('.hamburger-menu');
-  const body = document.querySelector('body');
+const Path = (props) => (
+  <motion.path
+    fill='transparent'
+    strokeWidth='3'
+    stroke='#000'
+    strokeLinecap='round'
+    {...props}
+  />
+);
 
-  if (open) {
-    navMobile.classList.toggle('show-mobile-nav');
-    hamburger.classList.toggle('animated');
-    body.classList.toggle('no-scroll');
-    setOpen(false);
-    closeNav();
-  }
-
-  return (
-    <div
-      className='hamburger-menu'
-      open={open}
-      onClick={() => setOpen(!open)}
-      aria-label='Menu'
-      aria-controls='navigation'
-    >
-      <div className='bar'></div>
-      <div className='bar'></div>
-      <div className='bar'></div>
-    </div>
-  );
-};
-
-const closeNav = () => {
-  let links = document.querySelectorAll('.nav-mobile-link');
-  links = Array.from(links);
-  links.forEach((elem) => {
-    elem.addEventListener('click', () => {
-      const hamburger = document.querySelector('.hamburger-menu');
-      const navMobile = document.querySelector('.nav-mobile');
-      const body = document.querySelector('body');
-      navMobile.classList.remove('show-mobile-nav');
-      hamburger.classList.remove('animated');
-      body.classList.remove('no-scroll');
-    });
-  });
-};
-
-export default HamburgerMenu;
+export const HamburgerMenu = ({ toggle }) => (
+  <button className='nav-btn' onClick={toggle}>
+    <svg width='23' height='23' viewBox='0 0 23 23'>
+      <Path
+        variants={{
+          closed: { d: 'M 2 2.5 L 20 2.5' },
+          open: { d: 'M 3 16.5 L 17 2.5' },
+        }}
+      />
+      <Path
+        d='M 2 9.423 L 20 9.423'
+        variants={{
+          closed: { opacity: 1 },
+          open: { opacity: 0 },
+        }}
+        transition={{ duration: 0.1 }}
+      />
+      <Path
+        variants={{
+          closed: { d: 'M 2 16.346 L 20 16.346' },
+          open: { d: 'M 3 2.5 L 17 16.346' },
+        }}
+      />
+    </svg>
+  </button>
+);

@@ -1,32 +1,45 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
+import { motion, useCycle } from 'framer-motion';
 
 import Container from './Container';
-import HamburgerMenu from './HamburgerMenu';
+import { HamburgerMenu } from './HamburgerMenu';
+import { MobileNav } from './MobileNav';
 import Logo from './Logo';
 
-const Navbar = styled.nav`
-  background: ${({ theme }) => theme.secondary};
-  padding: 1.5rem 0;
-`;
+const sidebar = {
+  open: (height = 1000) => ({
+    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+    transition: {
+      type: 'spring',
+      stiffness: 20,
+      restDelta: 2,
+    },
+  }),
+  closed: {
+    clipPath: 'circle(30px at 40px 40px)',
+    transition: {
+      delay: 0.5,
+      type: 'spring',
+      stiffness: 400,
+      damping: 40,
+    },
+  },
+};
 
-Navbar.Navflex = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+export const Navbar = () => {
+  const [isOpen, toggleOpen] = useCycle(false, true);
+  const containerRef = useRef(null);
 
-export default () => {
-  // hamburger menu state
-  const [open, setOpen] = useState(false);
   return (
-    <Navbar>
-      <Container className='nav-flex'>
-        <Navbar.Navflex>
-          <Logo />
-          <HamburgerMenu open={open} setOpen={setOpen} />
-        </Navbar.Navflex>
-      </Container>
-    </Navbar>
+    <motion.nav
+      initial={false}
+      animate={isOpen ? 'open' : 'closed'}
+      ref={containerRef}
+    >
+      <motion.div className='background' variants={sidebar} />
+      <MobileNav />
+      <HamburgerMenu toggle={() => toggleOpen()} />
+    </motion.nav>
   );
 };
